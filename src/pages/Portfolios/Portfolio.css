@@ -1,0 +1,79 @@
+.portfolio-card-context-containers {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008bba3e;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.portfolio-card-context-containers:hover .overlay {
+    width: 100%;
+}
+
+.portfolioContent {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* ----------------------------------------------- */
+
+.tooltipp {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.tooltipp .tooltiptextt {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltipp .tooltiptextt::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltipp:hover .tooltiptextt {
+    visibility: visible;
+}
+
+.tooltiptextt {
+    background-color: hotpink;
+    color: lightcoral;
+}

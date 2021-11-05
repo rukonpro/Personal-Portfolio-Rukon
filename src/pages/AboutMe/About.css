@@ -1,0 +1,6 @@
+.about-us-bg {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 55, 255, 0.462)), url(https://i.ibb.co/sHSg0fp/bg-slider.png);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
