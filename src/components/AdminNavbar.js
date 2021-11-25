@@ -44,7 +44,7 @@ export default function AdminNavbar({ showSidebar, setShowSidebar }) {
                 </div>
 
                 <div className="flex justify-between items-center w-full">
-                    <span><h4 className="uppercase text-white text-sm tracking-wider mt-1">
+                    <span><h4 className="uppercase text-white text-sm tracking-wider font-bold mt-1">
                         {location === '/'
                             ? 'Rukon Uddin'
                             : location.toUpperCase().replace('/', '')}

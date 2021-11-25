@@ -1,3 +1,10 @@
+.portfolio-Container {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 55, 255, 0.462)), url(https://i.ibb.co/zfHxyxn/m3L4Zu.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 .portfolio-card-context-containers {
     position: relative;
     width: 100%;
@@ -14,7 +21,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #008bba3e;
+    background-color: #003344ce;
     overflow: hidden;
     width: 0;
     height: 100%;
@@ -46,7 +53,7 @@
 .tooltipp .tooltiptextt {
     visibility: hidden;
     width: 120px;
-    background-color: black;
+    background-color: rgb(0, 128, 255);
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -66,14 +73,9 @@
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: black transparent transparent transparent;
+    border-color: rgb(0, 128, 255) transparent transparent transparent;
 }
 
 .tooltipp:hover .tooltiptextt {
     visibility: visible;
-}
-
-.tooltiptextt {
-    background-color: hotpink;
-    color: lightcoral;
 }

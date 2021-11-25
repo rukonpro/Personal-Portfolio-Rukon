@@ -1,7 +1,7 @@
 import './App.css';
 import "tailwindcss/tailwind.css"
-import 'bootstrap/dist/css/bootstrap.min.css';
 import "@material-tailwind/react/tailwind.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./pages/Home/Home";
 import Sidebar from "./components/Sidebar";
 import AboutMe from "./pages/AboutMe/AboutMe";

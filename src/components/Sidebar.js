@@ -26,7 +26,7 @@ export default function Sidebar() {
                                 <NavHashLink
                                     to="/#home"
                                     exact
-                                    className="flex items-center gap-4 text-sm  text-white font-light px-4 py-3 rounded-lg"
+                                    className="flex items-center gap-4 text-sm text-decoration-none  text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >
                                     <Icon name="home" size="2xl" />
@@ -37,7 +37,7 @@ export default function Sidebar() {
                             <li className="rounded-lg mb-2">
                                 <NavHashLink
                                     to="/#aboutMe"
-                                    className="flex items-center gap-4 text-sm text-white font-light px-4 py-3 rounded-lg"
+                                    className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >
                                     <img className='icon-sidebar' src="https://i.ibb.co/JRgKMVL/189664.png" alt="" />
@@ -47,7 +47,7 @@ export default function Sidebar() {
                             <li className="rounded-lg mb-2">
                                 <NavHashLink
                                     to="/#skills"
-                                    className="flex items-center gap-4 text-sm text-white font-light px-4 py-3 rounded-lg"
+                                    className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >
                                     <img className='icon-sidebar' src="https://i.ibb.co/C95xrqD/1207441.png" alt="" />
@@ -57,7 +57,7 @@ export default function Sidebar() {
                             <li className="rounded-lg mb-2">
                                 <NavHashLink
                                     to="/#services"
-                                    className="flex items-center gap-4 text-sm text-white font-light px-4 py-3 rounded-lg"
+                                    className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >
                                     <img className='icon-sidebar' src="https://i.ibb.co/7tXxXyq/3247363.png" alt="" />
@@ -67,17 +67,17 @@ export default function Sidebar() {
                             <li className="rounded-lg mb-2">
                                 <NavHashLink
                                     to="/#portfolio"
-                                    className="flex items-center gap-4 text-sm text-white font-light px-4 py-3 rounded-lg"
+                                    className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >
-                                    <img className='icon-sidebar' src="https://i.ibb.co/7tXxXyq/3247363.png" alt="" />
+                                    <img className='icon-sidebar' src="https://i.ibb.co/nC0MS3W/2489699.png" alt="" />
                                     Portfolios
                                 </NavHashLink>
                             </li>
                             <li className="rounded-lg mb-2">
                                 <NavHashLink
                                     to="/#contact"
-                                    className="flex items-center gap-4 text-sm text-white font-light px-4 py-3 rounded-lg"
+                                    className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >
                                     <img className='icon-sidebar' src="https://i.ibb.co/1bPrPp9/2343522.png" alt="" />
