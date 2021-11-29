@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
-
-import Icon from '@material-tailwind/react/Icon';
 import H6 from '@material-tailwind/react/Heading6';
 import { NavHashLink } from 'react-router-hash-link';
 import AdminNavbar from './AdminNavbar';
+import HomeLogo from '../img/4059356.png'
+import AboutMeLogo from '../img/3666941.png'
+import SkillLogo from '../img/4300002.png'
+import ServiceLogo from '../img/4667890.png'
+import PortfoliosLogo from '../img/4299715.png'
+import ContactUsLogo from '../img/2343522.png'
+import BlogLogo from '../img/3959542.png'
+import { NavLink } from 'react-router-dom';
+
 export default function Sidebar() {
     const [showSidebar, setShowSidebar] = useState('-left-64');
     return (
@@ -29,7 +36,7 @@ export default function Sidebar() {
                                     className="flex items-center gap-4 text-sm text-decoration-none  text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >
-                                    <Icon name="home" size="2xl" />
+                                    <img className='icon-sidebar' src={HomeLogo} alt="" />
 
                                     home
                                 </NavHashLink>
@@ -40,7 +47,7 @@ export default function Sidebar() {
                                     className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >
-                                    <img className='icon-sidebar' src="https://i.ibb.co/JRgKMVL/189664.png" alt="" />
+                                    <img className='icon-sidebar' src={AboutMeLogo} alt="" />
                                     About Me
                                 </NavHashLink>
                             </li>
@@ -50,7 +57,7 @@ export default function Sidebar() {
                                     className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >
-                                    <img className='icon-sidebar' src="https://i.ibb.co/C95xrqD/1207441.png" alt="" />
+                                    <img className='icon-sidebar' src={SkillLogo} alt="" />
                                     Skills
                                 </NavHashLink>
                             </li>
@@ -60,7 +67,7 @@ export default function Sidebar() {
                                     className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >
-                                    <img className='icon-sidebar' src="https://i.ibb.co/7tXxXyq/3247363.png" alt="" />
+                                    <img className='icon-sidebar' src={ServiceLogo} alt="" />
                                     Services
                                 </NavHashLink>
                             </li>
@@ -70,7 +77,7 @@ export default function Sidebar() {
                                     className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >
-                                    <img className='icon-sidebar' src="https://i.ibb.co/nC0MS3W/2489699.png" alt="" />
+                                    <img className='icon-sidebar' src={PortfoliosLogo} alt="" />
                                     Portfolios
                                 </NavHashLink>
                             </li>
@@ -80,9 +87,19 @@ export default function Sidebar() {
                                     className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >
-                                    <img className='icon-sidebar' src="https://i.ibb.co/1bPrPp9/2343522.png" alt="" />
+                                    <img className='icon-sidebar' src={ContactUsLogo} alt="" />
                                     Contact us
                                 </NavHashLink>
+                            </li>
+                            <li className="rounded-lg mb-2">
+                                <NavLink
+                                    to="/blog"
+                                    className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-4 py-3 rounded-lg"
+                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
+                                >
+                                    <img className='icon-sidebar' src={BlogLogo} alt="" />
+                                    Blog
+                                </NavLink>
                             </li>
 
                         </ul>

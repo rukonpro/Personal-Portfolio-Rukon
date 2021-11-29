@@ -9,7 +9,7 @@ import DetailsOutlinedIcon from '@mui/icons-material/DetailsOutlined';
 import PortfolioDetailsModal from './PortfolioDetailsModal/PortfolioDetailsModal';
 
 const Portfolio = ({ portfolio }) => {
-    const { img, title, description, gitHubCode, liveSite, serverCode, aos } = portfolio;
+    const { img_1, title, description, gitHubCode, liveSite, serverCode, aos } = portfolio;
 
     const [handlePortfolioModalOpen, setHandlePortfolioModalOpen] = React.useState(false);
     const handleOpenModal = () => setHandlePortfolioModalOpen(true);
@@ -20,14 +20,15 @@ const Portfolio = ({ portfolio }) => {
         <Grid item xs={12} sm={4} md={4} data-aos={aos}>
 
             <Box className="portfolio-card-context-containers">
-                <img src={img} alt="" className="image" />
+                <img src={img_1} alt="" className="image" />
+
                 <Box className="overlay">
                     <Box className="portfolioContent">
                         <Typography variant="p">{
                             title
                         }</Typography> <br />
                         <Typography variant="p" sx={{ color: 'yellow', fontSize: 10 }}>
-                            {description.slice(0, 100)}
+                            <span className='font-bold text-green-400'>Implements By:</span> {description.slice(0, 100)}
                         </Typography>
 
                         <Box>

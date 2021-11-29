@@ -1,10 +1,5 @@
-/* .services-img {
-    width: 120px;
-    height: 120px;
-} */
-
 #services {
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 55, 255, 0.462)), url(https://i.ibb.co/JsDDx8M/photo-1622737133809-d95047b9e673-ixid-Mnwx-Mj-A3f-DB8-MHxwa-G90by1w-YWdlf-Hx8f-GVuf-DB8f-Hx8-ixlib-r.jpg);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 55, 255, 0.462)), url(../../img/6oj9176a.png);
     color: white;
     background-repeat: no-repeat;
     background-size: cover;

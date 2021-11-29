@@ -12,7 +12,9 @@ const Portfolios = () => {
     const portfolios = [
         {
             id: 0,
-            img: 'https://i.ibb.co/S3t7tx1/Screenshot-2021-11-25-at-01-12-44-Online-CLock-Shop.png',
+            img_1: 'https://i.ibb.co/S3t7tx1/Screenshot-2021-11-25-at-01-12-44-Online-CLock-Shop.png',
+            img_2: 'https://i.ibb.co/0c6hw44/Screenshot-2021-11-30-at-00-08-13-Online-CLock-Shop.png',
+            img_3: 'https://i.ibb.co/8x21yVB/Screenshot-2021-11-30-at-00-13-02-Online-CLock-Shop.png',
             title: 'ONLINE CLOCK SHOP',
             description: "React, React-router, Node.js, Express.js, Firebase,Bootstrap, Material UI,Telwind CSS, MongoDB",
             list1: 'Users can add multiple orders,  Delete orders , place order and review,.',
@@ -26,7 +28,9 @@ const Portfolios = () => {
 
         {
             id: 1,
-            img: 'https://i.ibb.co/0G5JGkL/Screenshot-2021-11-25-at-01-43-16-React-App.png',
+            img_1: 'https://i.ibb.co/0G5JGkL/Screenshot-2021-11-25-at-01-43-16-React-App.png',
+            img_2: 'https://i.ibb.co/2YqwmLH/Screenshot-2021-11-30-at-00-37-15-React-App.png',
+            img_3: 'https://i.ibb.co/dPrP4pk/Screenshot-2021-11-30-at-00-35-32-React-App.png',
             title: 'Doctors Portal',
             description: "React, React-router, Node.js, Express.js, Firebase,Bootstrap, Material UI,Telwind CSS, MongoDB",
             list1: 'Users can add multiple orders, review orders, Delete orders and place order.',
@@ -40,7 +44,10 @@ const Portfolios = () => {
 
         {
             id: 2,
-            img: 'https://i.ibb.co/t8LvXMd/Screenshot-2021-11-05-at-21-35-55-Express-Home-Delivery.png',
+            img_1: 'https://i.ibb.co/t8LvXMd/Screenshot-2021-11-05-at-21-35-55-Express-Home-Delivery.png',
+            img_2: 'https://i.ibb.co/BTxf42p/Screenshot-2021-11-30-at-00-44-29-Express-Home-Delivery.png',
+            img_3: 'https://i.ibb.co/cNRsQsX/Screenshot-2021-11-30-at-01-04-08-Express-Home-Delivery.png',
+
             title: 'Express Home Delivery',
             description: "React, React-router, React-hook-form, Node.js,Express.js, Firebase, Bootstrap,Telwind CSS, MaterialUI, MongoDB.",
             list1: ' Users can Order services and Order review,remove orders',
@@ -55,7 +62,9 @@ const Portfolios = () => {
         },
         {
             id: 3,
-            img: 'https://i.ibb.co/Y3x2WqX/Screenshot-2021-11-05-at-21-16-51-Ama-john.png',
+            img_1: 'https://i.ibb.co/Y3x2WqX/Screenshot-2021-11-05-at-21-16-51-Ama-john.png',
+            img_2: 'https://i.ibb.co/5BgVyFz/Screenshot-2021-11-30-at-01-10-07-Ama-john.png',
+            img_3: 'https://i.ibb.co/Y3x2WqX/Screenshot-2021-11-05-at-21-16-51-Ama-john.png',
             title: 'Ama john',
             description: "React, React-router, React-hook-form, Node.js,Express.js, Firebase, Bootstrap,Telwind CSS, MaterialUI, MongoDB.",
             list1: ' Users can Order services and Order review,remove orders',
@@ -67,7 +76,9 @@ const Portfolios = () => {
         },
         {
             id: 4,
-            img: 'https://i.ibb.co/dt6mB0Q/Screenshot-2021-11-05-at-21-42-04-PRO-Dental-CARE.png',
+            img_1: 'https://i.ibb.co/dt6mB0Q/Screenshot-2021-11-05-at-21-42-04-PRO-Dental-CARE.png',
+            img_2: 'https://i.ibb.co/JQV1zy4/Screenshot-2021-11-30-at-01-17-13-PRO-Dental-CARE.png',
+            img_3: 'https://i.ibb.co/7GPfQPF/Screenshot-2021-11-30-at-01-18-31-PRO-Dental-CARE.png',
             title: 'PRO DENTAL CARE',
             description: "React, React-router, Bootstrap,Telwind CSS and MaterialUI.",
             list1: 'User authentication firebase login with google  or  Create account  and login',
@@ -77,7 +88,9 @@ const Portfolios = () => {
         },
         {
             id: 5,
-            img: 'https://i.ibb.co/jZpRqwz/Screenshot-2021-11-05-at-22-18-21-Programing-Education-Academy.png',
+            img_1: 'https://i.ibb.co/jZpRqwz/Screenshot-2021-11-05-at-22-18-21-Programing-Education-Academy.png',
+            img_2: 'https://i.ibb.co/bHZcspZ/Screenshot-2021-11-30-at-01-22-41-Programing-Education-Academy.png',
+            img_3: 'https://i.ibb.co/jWmtHPG/Screenshot-2021-11-30-at-01-24-08-Programing-Education-Academy.png',
             title: 'Programing Education Academy',
             description: "React, React-router,  Bootstrap,Telwind CSS, MaterialUI,",
             liveSite: 'https://programing-education-academy.netlify.app/',
@@ -91,12 +104,12 @@ const Portfolios = () => {
 
     ]
     return (
-        <Box className="portfolio-Container py-11">
-            <Container>
-                <Typography variant='h4' className=" text-5xl fw-bold text-center pb-11 text-pink-400" data-aos="zoom-out-down">
+        <Box id="portfolio" className="portfolio-Container h-auto pt-52 ">
+            <Container className=''>
+                <Typography variant='h4' className=" text-5xl pb-6 fw-bold text-center  text-pink-400" data-aos="zoom-out-down">
                     PORTFOLIO
                 </Typography>
-                <Box id="portfolio" sx={{ flexGrow: 1, p: 3 }}>
+                <Box sx={{ flexGrow: 1, p: 3 }}>
                     <Grid container spacing={{ xs: 2, md: 3, }} columns={{ xs: 4, sm: 8, md: 12 }}>
 
                         {

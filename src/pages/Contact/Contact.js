@@ -26,6 +26,7 @@ const Contact = () => {
         emailjs.sendForm('service_zdrtp9b', 'template_n1ub0zc', form.current, 'user_sMNanZ38ggdHIXPN6PNqZ')
             .then((result) => {
                 console.log(result.text);
+                setOpen(true);
             }, (error) => {
                 console.log(error.text);
             });
@@ -55,6 +56,7 @@ const Contact = () => {
                     <div className=" mt-10 row ">
                         <div className="  mb-6 font-light col-sm-12 col-md-6 col-lg-6 " data-aos="fade-right">
                             <Input
+                                required
                                 ref={form}
                                 type="text"
                                 style={{ color: 'white' }}
@@ -66,6 +68,7 @@ const Contact = () => {
                         </div>
                         <div className=" mb-6 font-light col-sm-12 col-md-6 col-lg-6" data-aos="fade-left">
                             <Input
+                                required
                                 style={{ color: 'white' }}
                                 type="email"
                                 color="purple"
@@ -78,6 +81,7 @@ const Contact = () => {
                     <div className="flex flex-wrap ">
                         <div className="w-full lg:w-12/12  font-light" data-aos="fade-right">
                             <Input
+                                required
                                 style={{ color: 'white' }}
                                 type="text"
                                 color="purple"
@@ -89,6 +93,7 @@ const Contact = () => {
                     </div>
                     <div className="flex flex-wrap mt-6 font-light" data-aos="fade-right">
                         <Textarea
+                            required
                             style={{ color: 'white' }}
                             color="purple"
                             placeholder="Message"

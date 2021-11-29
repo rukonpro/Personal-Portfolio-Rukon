@@ -10,6 +10,7 @@ import Contact from "./pages/Contact/Contact";
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Portfolios from './pages/Portfolios/Portfolios';
+import Blog from './pages/Blog/Blog';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Sidebar />
         <div className="md:ml-64">
           <Switch>
-            <Route path="/">
+            <Route exact path="/">
               <Home></Home>
             </Route>
             <Route path="/aboutMe">
@@ -32,6 +33,9 @@ function App() {
             </Route>
             <Route path="/contact">
               <Contact></Contact>
+            </Route>
+            <Route path="/blog">
+              <Blog></Blog>
             </Route>
           </Switch>
           <Footer></Footer>

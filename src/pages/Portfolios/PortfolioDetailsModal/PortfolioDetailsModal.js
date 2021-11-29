@@ -8,6 +8,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import StorageOutlinedIcon from '@mui/icons-material/StorageOutlined';
 import LiveTvOutlinedIcon from '@mui/icons-material/LiveTvOutlined';
 import { List } from '@mui/material';
+import { Carousel } from 'react-bootstrap';
 const style = {
     position: 'absolute',
     top: '50%',
@@ -22,7 +23,7 @@ const style = {
 
 const PortfolioDetailsModal = ({ handlePortfolioModalOpen, handleClose, portfolio }) => {
 
-    const { img, title, description, gitHubCode, serverCode, liveSite, list1, list2, list3 } = portfolio;
+    const { img_1, img_2, img_3, title, description, gitHubCode, serverCode, liveSite, list1, list2, list3 } = portfolio;
     return (
         <div>
 
@@ -41,7 +42,21 @@ const PortfolioDetailsModal = ({ handlePortfolioModalOpen, handleClose, portfoli
 
                     <Box sx={style}>
                         <Box>
-                            <img src={img} alt="" />
+                            <Carousel>
+                                <Carousel.Item interval={1000}>
+                                    <img src={img_1} alt="" />
+
+                                </Carousel.Item>
+                                <Carousel.Item interval={500}>
+                                    <img src={img_2} alt="" />
+
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img src={img_3} alt="" />
+
+                                </Carousel.Item>
+                            </Carousel>
+
                         </Box>
                         <Box sx={{ px: 1, pb: 1 }}>
                             <Typography id="transition-modal-title" variant="h6" component="h2">
