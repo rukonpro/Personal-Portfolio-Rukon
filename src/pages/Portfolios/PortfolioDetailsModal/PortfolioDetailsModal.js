@@ -9,6 +9,23 @@ import StorageOutlinedIcon from '@mui/icons-material/StorageOutlined';
 import LiveTvOutlinedIcon from '@mui/icons-material/LiveTvOutlined';
 import { List } from '@mui/material';
 import { Carousel } from 'react-bootstrap';
+
+import { styled } from '@mui/material/styles';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+const BootstrapTooltip = styled(({ className, ...props }) => (
+    <Tooltip {...props} arrow classes={{ popper: className }} />
+))(({ theme }) => ({
+    [`& .${tooltipClasses.arrow}`]: {
+        color: theme.palette.common.black,
+    },
+    [`& .${tooltipClasses.tooltip}`]: {
+        backgroundColor: theme.palette.common.black,
+        color: '#fff',
+
+    },
+}));
+
+
 const style = {
     position: 'absolute',
     top: '50%',
@@ -72,15 +89,37 @@ const PortfolioDetailsModal = ({ handlePortfolioModalOpen, handleClose, portfoli
                         </Box>
                         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                             <Box sx={{ m: 2 }}>
-                                <a href={liveSite} target="blank"> <LiveTvOutlinedIcon /></a>
+                                <a href={liveSite} target="blank">
+                                    <BootstrapTooltip
+                                        title="Live Site"
+                                        placement="top-end"
+                                        arrow>
+                                        <LiveTvOutlinedIcon />
+                                    </BootstrapTooltip>
+
+                                </a>
                             </Box>
                             <Box sx={{ m: 2 }}>
-                                <a href={gitHubCode} target="blank"><GitHubIcon /></a>
+                                <a href={gitHubCode} target="blank">
+                                    <BootstrapTooltip
+                                        title="Client  Site Code"
+                                        placement="top-end"
+                                        arrow>
+                                        <GitHubIcon />
+                                    </BootstrapTooltip>
+                                </a>
                             </Box>
                             {
                                 serverCode &&
                                 <Box sx={{ m: 2 }}>
-                                    <a href={serverCode} target="blank"><StorageOutlinedIcon /></a>
+                                    <a href={serverCode} target="blank">
+                                        <BootstrapTooltip
+                                            title="Server Site Code"
+                                            placement="top-end"
+                                            arrow>
+                                            <StorageOutlinedIcon />
+                                        </BootstrapTooltip>
+                                    </a>
                                 </Box>
                             }
                         </Box>

@@ -8,6 +8,23 @@ import StorageOutlinedIcon from '@mui/icons-material/StorageOutlined';
 import DetailsOutlinedIcon from '@mui/icons-material/DetailsOutlined';
 import PortfolioDetailsModal from './PortfolioDetailsModal/PortfolioDetailsModal';
 
+
+import { styled } from '@mui/material/styles';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+const BootstrapTooltip = styled(({ className, ...props }) => (
+    <Tooltip {...props} arrow classes={{ popper: className }} />
+))(({ theme }) => ({
+    [`& .${tooltipClasses.arrow}`]: {
+        color: theme.palette.common.white,
+    },
+    [`& .${tooltipClasses.tooltip}`]: {
+        backgroundColor: theme.palette.common.white,
+        color: 'rgba(0, 0, 0, 0.87)',
+
+    },
+}));
+
+
 const Portfolio = ({ portfolio }) => {
     const { img_1, title, description, gitHubCode, liveSite, serverCode, aos } = portfolio;
 
@@ -31,24 +48,39 @@ const Portfolio = ({ portfolio }) => {
                             <span className='font-bold text-green-400'>Implements By:</span> {description.slice(0, 100)}
                         </Typography>
 
-                        <Box>
-                            <Box onClick={handleOpenModal} className="tooltipp"><DetailsOutlinedIcon sx={{ color: 'limegreen' }} />
-                                <span className="tooltiptextt">Details</span>
+                        <Box className='flex justify-around'>
+                            <Box onClick={handleOpenModal} >
+                                <BootstrapTooltip
+                                    title="Details"
+                                    placement="top-end"
+                                    arrow>
+                                    <DetailsOutlinedIcon sx={{ color: 'limegreen' }} />
+                                </BootstrapTooltip>
                             </Box>
 
-                            <Box className="tooltipp">
+                            <Box >
 
-                                <a href={liveSite} target="_blank" rel="noopener noreferrer"> <LiveTvOutlinedIcon sx={{ color: 'limegreen' }} />
+                                <a href={liveSite} target="_blank" rel="noopener noreferrer">
+                                    <BootstrapTooltip
+                                        title="Live Site"
+                                        placement="top-end"
+                                        arrow>
+                                        <LiveTvOutlinedIcon sx={{ color: 'limegreen' }} />
+                                    </BootstrapTooltip>
+
                                 </a>
-                                <span className="tooltiptextt">Live Site</span>
-
                             </Box>
-                            <Box className="tooltipp">
+                            <Box>
 
                                 <a href={gitHubCode} target="blank">
-                                    <GitHubIcon sx={{ color: 'limegreen' }} />
+                                    <BootstrapTooltip
+                                        title="Client Site Code"
+                                        placement="top-end"
+                                        arrow>
+                                        <GitHubIcon sx={{ color: 'limegreen' }} />
+                                    </BootstrapTooltip>
                                 </a>
-                                <span className="tooltiptextt">Github Code</span>
+
 
                             </Box>
 
@@ -57,13 +89,19 @@ const Portfolio = ({ portfolio }) => {
 
                             {
                                 serverCode &&
-                                <Box className="tooltipp">
+                                <Box>
 
                                     <a href={serverCode} target="_blank" rel="noopener noreferrer">
-                                        <StorageOutlinedIcon sx={{ color: 'limegreen' }} />
+                                        <BootstrapTooltip
+                                            title="Server site Code"
+                                            placement="top-end"
+                                            arrow>
+                                            <StorageOutlinedIcon sx={{ color: 'limegreen' }} />
+                                        </BootstrapTooltip>
+
                                     </a>
 
-                                    <span className="tooltiptextt">Server</span>
+
                                 </Box>
                             }
                         </Box>

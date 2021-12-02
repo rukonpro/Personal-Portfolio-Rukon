@@ -27,7 +27,7 @@ const Services = () => {
                                 <h1 className='font-bold text-5xl text-purple-300'>Front-end</h1>
                             </div>
                             <div>
-                                As well as making responsive front-end development with popular javascript frameworks such as React.js, familiar with Vue.js, HTML5, CSS3, Bootstrap4&5, MaterialUI and techniques working with jQuery.
+                                As well as making responsive front-end development with popular javascript frameworks such as React.js, familiar with Vue.js, HTML5, CSS3, Bootstrap4&5,and  MaterialUI.
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ const Services = () => {
                                 <h1 className='font-bold text-5xl text-yellow-300'>Template</h1>
                             </div>
                             <div>
-                                <p>As well as making responsive web template with HTML5, CSS3, Bootstrap4&5, Tailwind-CSS and jQuery.</p>
+                                <p>As well as making responsive web template with HTML5, CSS3, Bootstrap4&5, Tailwind-CSS and Metaril iu.</p>
                             </div>
                         </div>
                     </div>

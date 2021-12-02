@@ -2,7 +2,6 @@ import React from 'react';
 import Button from '@material-tailwind/react/Button';
 import Icon from '@material-tailwind/react/Icon';
 import "@material-tailwind/react/tailwind.css";
-
 import { useLocation } from 'react-router';
 
 
@@ -44,11 +43,11 @@ export default function AdminNavbar({ showSidebar, setShowSidebar }) {
                 </div>
 
                 <div className="flex justify-between items-center w-full">
-                    <span><h4 className="uppercase text-white text-sm tracking-wider font-bold mt-1">
+                    <button className="uppercase text-white text-sm tracking-wider font-bold mt-1 cursor-pointer">
                         {location === '/'
                             ? 'Rukon Uddin'
                             : location.toUpperCase().replace('/', '')}
-                    </h4></span>
+                    </button>
 
 
                 </div>
