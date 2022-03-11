@@ -7,9 +7,11 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 import Typewriter from 'typewriter-effect';
-
 import { styled } from '@mui/material/styles';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+
+
+
 const BootstrapTooltip = styled(({ className, ...props }) => (
     <Tooltip {...props} arrow classes={{ popper: className }} />
 ))(({ theme }) => ({
@@ -33,7 +35,7 @@ export default function footer() {
             <div className='text-white  font-light row text-center'>
                 <div className='py-2  col-sm-12 col-md-6 col-lg-4'>
                     <small className='font-bold'>Sunamganj 3110, Syleht Bangladesh.</small><br />
-                    <small><CallIcon /> 01765459224 || 01877533747</small><br />
+                    <small><CallIcon /> <a className='no-underline text-white' href="tel:+8801765459224">+8801765459224</a> || <a className='no-underline text-white' href="tel:+8801877533747">8801877533747</a></small><br />
                     <small> <a href="mailto:rukon.js@gmail.com" className='text-white text-decoration-none'><EmailIcon /> rukon.js@gmail.com</a></small>
                 </div>
                 <div className='text-center py-2 col-sm-12 col-md-6 col-lg-4'>
@@ -110,6 +112,10 @@ export default function footer() {
                         </li>
                     </ul>
                 </div>
+
+
+
+
             </div>
 
             <div className='text-center'>

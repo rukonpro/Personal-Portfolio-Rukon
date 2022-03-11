@@ -1,28 +1,83 @@
 import React from 'react';
-
+import './Counter.css'
+import CountUp, { useCountUp } from 'react-countup';
+import VisibilitySensor from "react-visibility-sensor";
 const Counters = () => {
+
+    useCountUp({ ref: 'counter', end: 10, duration: 2 });
+
     return (
-        <section className="site-section section-counters text-center">
-            <div className="container">
-                <div className="row">
-                    <div className="col-sm-4 col-xs-12">
-                        <p className="counter start" data-to="01" data-speed="2000">0</p>
-                        <h4>Years Experience</h4>
-                    </div>
-                    <div className="col-sm-4 col-xs-12">
-                        <p className="counter start" data-to="20" data-speed="2000">0</p>
-                        <span className="counter-plus">+</span>
-                        <h4>Completed Projects</h4>
-                    </div>
-                    <div className="col-sm-4 col-xs-12">
-                        <p className="counter start" data-to="360" data-speed="2000">0</p>
-                        <span className="counter-plus">+</span>
-                        <h4>GitHub Contributions in the last year</h4>
+        <div className="counter">
+            {<div className="container ">
+
+                <div className="row flex justify-center">
+                    <div className="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+                        <div className="employees">
+                            <p className="counter-count">
+                                <CountUp
+                                    start={100}
+                                    end={1}
+                                    duration={5}
+                                >
+                                    {({ countUpRef, start }) => (
+                                        <VisibilitySensor onChange={start}>
+                                            <span ref={countUpRef} />
+                                        </VisibilitySensor>
+                                    )}
+                                </CountUp>+
+                            </p>
+                            <p className="employee-p">Years Experience</p>
+                        </div>
                     </div>
 
+                    <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div className="customer">
+                            <p className="counter-count">
+                                <CountUp
+                                    start={0}
+                                    end={20}
+                                    duration={5}
+                                >
+                                    {({ countUpRef, start }) => (
+                                        <VisibilitySensor onChange={start}>
+                                            <span ref={countUpRef} />
+                                        </VisibilitySensor>
+                                    )}
+                                </CountUp>+
+                            </p>
+                            <p className="customer-p">Completed Projects</p>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div className="design">
+                            <p className="counter-count">
+                                <CountUp
+                                    start={0}
+                                    end={98}
+                                    duration={5}
+                                >
+                                    {({ countUpRef, start }) => (
+                                        <VisibilitySensor onChange={start}>
+                                            <span ref={countUpRef} />
+                                        </VisibilitySensor>
+                                    )}
+                                </CountUp>+
+                            </p>
+
+
+
+
+
+                            <p className="design-p">GitHub Contributions in the last year</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+            }
+        </div>
+
+
     );
 };
 

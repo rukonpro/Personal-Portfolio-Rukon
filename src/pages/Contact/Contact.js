@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, forwardRef, useState } from 'react';
 import './Contact.css';
 import Input from '@material-tailwind/react/Input';
 import Textarea from '@material-tailwind/react/Textarea';
@@ -10,15 +10,15 @@ import MuiAlert from '@mui/material/Alert';
 import emailjs from 'emailjs-com';
 
 
-const Alert = React.forwardRef(function Alert(props, ref) {
-    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
-});
+
 
 const Contact = () => {
-    const [open, setOpen] = React.useState(false);
-
+    const [open, setOpen] = useState(false);
     const form = useRef();
 
+    const Alert = forwardRef(function Alert(props, ref) {
+        return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+    });
 
     const sendEmail = (event) => {
         event.preventDefault();
@@ -48,13 +48,13 @@ const Contact = () => {
         <div id="contact"  >
 
             <div className='container'>
-                <h1 className="text-purple-400 fw-bold text-2xl mb-6 pt-28 font-light uppercase" data-aos="zoom-out-down">
+                <h1 className="text-purple-400 fw-bold text-2xl mb-6 pt-28 font-light uppercase" data-aos="zoom-out-down" data-aos-duration="2000">
                     CONTACT ME
                 </h1>
                 <form ref={form} onSubmit={sendEmail} >
-                    <div data-aos="fade-right"></div>
+                    <div data-aos="fade-right" data-aos-duration="2000"></div>
                     <div className=" mt-10 row ">
-                        <div className="  mb-6 font-light col-sm-12 col-md-6 col-lg-6 " data-aos="fade-right">
+                        <div className="  mb-6 font-light col-sm-12 col-md-6 col-lg-6 " data-aos="fade-right" data-aos-duration="2000">
                             <Input
                                 required
                                 ref={form}
@@ -66,7 +66,7 @@ const Contact = () => {
 
                             />
                         </div>
-                        <div className=" mb-6 font-light col-sm-12 col-md-6 col-lg-6" data-aos="fade-left">
+                        <div className=" mb-6 font-light col-sm-12 col-md-6 col-lg-6" data-aos="fade-left" data-aos-duration="2000">
                             <Input
                                 required
                                 style={{ color: 'white' }}
@@ -79,7 +79,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="flex flex-wrap ">
-                        <div className="w-full lg:w-12/12  font-light" data-aos="fade-right">
+                        <div className="w-full lg:w-12/12  font-light" data-aos="fade-right" data-aos-duration="2000">
                             <Input
                                 required
                                 style={{ color: 'white' }}
@@ -91,7 +91,7 @@ const Contact = () => {
                             />
                         </div>
                     </div>
-                    <div className="flex flex-wrap mt-6 font-light" data-aos="fade-right">
+                    <div className="flex flex-wrap mt-6 font-light" data-aos="fade-right" data-aos-duration="2000">
                         <Textarea
                             required
                             style={{ color: 'white' }}
@@ -102,7 +102,7 @@ const Contact = () => {
                         />
                     </div>
 
-                    <button type="submit" className='btn btn-danger my-10 border-0  ' data-aos="fade-left">Send Message</button>
+                    <button type="submit" className='btn btn-danger my-10 border-0  ' data-aos="fade-left" data-aos-duration="2000">Send Message</button>
                 </form>
                 <Stack spacing={2} sx={{ width: '100%' }}>
                     <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>

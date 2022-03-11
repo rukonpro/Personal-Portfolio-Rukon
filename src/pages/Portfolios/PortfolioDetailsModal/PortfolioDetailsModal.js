@@ -40,7 +40,7 @@ const style = {
 
 const PortfolioDetailsModal = ({ handlePortfolioModalOpen, handleClose, portfolio }) => {
 
-    const { img_1, img_2, img_3, title, description, gitHubCode, serverCode, liveSite, list1, list2, list3 } = portfolio;
+    const { img_1, img_2, img_3, img_4, img_5, img_6, title, description, gitHubCode, serverCode, liveSite, list1, list2, list3 } = portfolio;
     return (
         <div>
 
@@ -72,6 +72,18 @@ const PortfolioDetailsModal = ({ handlePortfolioModalOpen, handleClose, portfoli
                                     <img src={img_3} alt="" />
 
                                 </Carousel.Item>
+                                {img_4 && <Carousel.Item>
+                                    <img src={img_4} alt="" />
+
+                                </Carousel.Item>}
+                                {img_5 && <Carousel.Item>
+                                    <img src={img_5} alt="" />
+
+                                </Carousel.Item>}
+                                {img_6 && <Carousel.Item>
+                                    <img src={img_6} alt="" />
+
+                                </Carousel.Item>}
                             </Carousel>
 
                         </Box>

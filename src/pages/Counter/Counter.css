@@ -1,0 +1,41 @@
+.counter {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 55, 255, 0.462)), url(https://wallpaperaccess.com/full/6492992.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+
+}
+
+.employees, .customer, .design, .order {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.counter-count {
+    font-size: 40px;
+    background-color: #004f80;
+    border-radius: 50%;
+    position: relative;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    line-height: 100px;
+    width: 200px;
+    height: 92px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+    box-shadow: 2px 3px 4px #009dff;
+
+}
+
+.employee-p, .customer-p, .order-p, .design-p {
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 34px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}

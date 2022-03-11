@@ -1,7 +1,7 @@
 import React from 'react';
 import AboutMe from '../AboutMe/AboutMe';
 import Contact from '../Contact/Contact';
-// import Counters from '../Counter/Counter';
+import Counters from '../Counter/Counter';
 import Header from '../Header/Header';
 import Portfolios from '../Portfolios/Portfolios';
 import Services from '../Services/Services';
@@ -16,7 +16,7 @@ const Home = () => {
             <Skills></Skills>
             <Services></Services>
             <Portfolios></Portfolios>
-            {/* <Counters></Counters> */}
+            <Counters></Counters>
             <Contact></Contact>
         </div>
     );
