@@ -6,12 +6,35 @@ import AOS from 'aos';
 import Portfolio from './Portfolio';
 import 'aos/dist/aos.css';
 
+/* 
 
+
+
+
+
+*/
 const Portfolios = () => {
     AOS.init();
     const portfolios = [
         {
             id: 0,
+            img_1: 'https://i.ibb.co/8dZ9dsN/screenshot-eskul-avengers-web-app-2022-04-02-22-15-06.png',
+            img_2: 'https://i.ibb.co/nrPZ9By/screenshot-eskul-avengers-web-app-2022-04-02-22-16-31.png',
+            img_3: 'https://i.ibb.co/RyyBWcQ/screenshot-eskul-avengers-web-app-2022-04-02-22-17-33.png',
+            img_4: 'https://i.ibb.co/XjZ2D7w/screenshot-eskul-avengers-web-app-2022-04-02-22-18-03.png',
+            img_5: 'https://i.ibb.co/fp76S8C/screenshot-eskul-avengers-web-app-2022-04-02-22-18-40.png',
+            title: 'Eskul',
+            description: "React, Mongoose, Express, Firebase,  NodeJS, Material UI, JSX, SSL Commerce, Email.Js, Firebase, Heroku",
+            list1: 'School’s information-related website with dynamic functions and responsive design. Implement a dashboard for admin and users',
+            list2: 'Users can also find out transport for their child based on their school location, buy books, donate money for any school, hire an online private tutor and read the books',
+            list3: 'Users can contact us using the contact us form and by messenger chatting system. Ask any questions using the faq form. They can Review our website, private tutor, and books',
+            gitHubCode: "https://github.com/team-avengers-endgame/Eskul-Client",
+            liveSite: 'https://eskul-avengers.web.app',
+            serverCode: 'https://github.com/team-avengers-endgame/Eskul-Server',
+            aos: 'flip-right'
+        },
+        {
+            id: 1,
             img_1: 'https://i.ibb.co/S3t7tx1/Screenshot-2021-11-25-at-01-12-44-Online-CLock-Shop.png',
             img_2: 'https://i.ibb.co/0c6hw44/Screenshot-2021-11-30-at-00-08-13-Online-CLock-Shop.png',
             img_3: 'https://i.ibb.co/8x21yVB/Screenshot-2021-11-30-at-00-13-02-Online-CLock-Shop.png',
@@ -28,7 +51,7 @@ const Portfolios = () => {
         },
 
         {
-            id: 1,
+            id: 2,
             img_1: 'https://i.ibb.co/2h4xrNw/Screenshot-2022-02-02-013311.png',
             img_2: 'https://i.ibb.co/b5Qnhp6/Screenshot-2022-02-02-013358.png',
             img_3: 'https://i.ibb.co/hYkz7dS/Screenshot-2022-02-02-013432.png',
@@ -47,7 +70,7 @@ const Portfolios = () => {
         },
 
         {
-            id: 2,
+            id: 3,
             img_1: 'https://i.ibb.co/0G5JGkL/Screenshot-2021-11-25-at-01-43-16-React-App.png',
             img_2: 'https://i.ibb.co/2YqwmLH/Screenshot-2021-11-30-at-00-37-15-React-App.png',
             img_3: 'https://i.ibb.co/dPrP4pk/Screenshot-2021-11-30-at-00-35-32-React-App.png',
@@ -62,7 +85,7 @@ const Portfolios = () => {
             aos: 'flip-left'
         },
         {
-            id: 3,
+            id: 4,
             img_1: 'https://i.ibb.co/Nj7NDv5/Screenshot-2022-02-02-024345.png',
             img_2: 'https://i.ibb.co/mDHv54p/Screenshot-2022-02-02-024436.png',
             img_3: 'https://i.ibb.co/9tyJ3V9/Screenshot-2022-02-02-024657.png',
@@ -81,7 +104,7 @@ const Portfolios = () => {
         },
 
         {
-            id: 4,
+            id: 5,
             img_1: 'https://i.ibb.co/t8LvXMd/Screenshot-2021-11-05-at-21-35-55-Express-Home-Delivery.png',
             img_2: 'https://i.ibb.co/HGhkkmg/Screenshot-2022-02-02-032955.png',
             img_3: 'https://i.ibb.co/BTxf42p/Screenshot-2021-11-30-at-00-44-29-Express-Home-Delivery.png',
@@ -100,7 +123,7 @@ const Portfolios = () => {
 
         },
         {
-            id: 5,
+            id: 6,
             img_1: 'https://i.ibb.co/Y3x2WqX/Screenshot-2021-11-05-at-21-16-51-Ama-john.png',
             img_2: 'https://i.ibb.co/5BgVyFz/Screenshot-2021-11-30-at-01-10-07-Ama-john.png',
             img_3: 'https://i.ibb.co/Y3x2WqX/Screenshot-2021-11-05-at-21-16-51-Ama-john.png',
@@ -114,7 +137,7 @@ const Portfolios = () => {
             aos: 'flip-left'
         },
         {
-            id: 6,
+            id: 7,
             img_1: 'https://i.ibb.co/dt6mB0Q/Screenshot-2021-11-05-at-21-42-04-PRO-Dental-CARE.png',
             img_2: 'https://i.ibb.co/JQV1zy4/Screenshot-2021-11-30-at-01-17-13-PRO-Dental-CARE.png',
             img_3: 'https://i.ibb.co/7GPfQPF/Screenshot-2021-11-30-at-01-18-31-PRO-Dental-CARE.png',
@@ -126,7 +149,7 @@ const Portfolios = () => {
             aos: 'flip-right'
         },
         {
-            id: 7,
+            id: 8,
             img_1: 'https://i.ibb.co/jZpRqwz/Screenshot-2021-11-05-at-22-18-21-Programing-Education-Academy.png',
             img_2: 'https://i.ibb.co/bHZcspZ/Screenshot-2021-11-30-at-01-22-41-Programing-Education-Academy.png',
             img_3: 'https://i.ibb.co/jWmtHPG/Screenshot-2021-11-30-at-01-24-08-Programing-Education-Academy.png',
