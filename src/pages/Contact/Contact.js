@@ -62,6 +62,7 @@ const Contact = () => {
                                 style={{ color: 'white' }}
                                 placeholder="Full Name"
                                 name="user_name"
+                                color="purple"
 
 
                             />
@@ -82,7 +83,7 @@ const Contact = () => {
                         <div className="w-full lg:w-12/12  font-light" data-aos="fade-right" data-aos-duration="2000">
                             <Input
                                 required
-                                style={{ color: 'white' }}
+                                style={{ color: 'white', padding: 2 }}
                                 type="text"
                                 color="purple"
                                 placeholder="Subject"

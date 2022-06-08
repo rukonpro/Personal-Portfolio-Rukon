@@ -29,6 +29,7 @@ const AboutMe = () => {
                 </div>
             </div>
             <div data-aos="fade-right" data-aos-duration="2000"></div>
+
         </div>
     );
 };

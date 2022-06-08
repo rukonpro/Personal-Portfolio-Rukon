@@ -171,7 +171,7 @@ const Portfolios = () => {
                 <Typography variant='h4' className=" text-5xl pb-6 fw-bold text-center  text-pink-400" data-aos="zoom-out-down">
                     PORTFOLIO
                 </Typography>
-                <Box sx={{ flexGrow: 1, p: 3 }}>
+                <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={{ xs: 2, md: 3, }} columns={{ xs: 4, sm: 8, md: 12 }}>
 
                         {

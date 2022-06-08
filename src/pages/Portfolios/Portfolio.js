@@ -30,13 +30,22 @@ const Portfolio = ({ portfolio }) => {
 
     const [handlePortfolioModalOpen, setHandlePortfolioModalOpen] = React.useState(false);
     const handleOpenModal = () => setHandlePortfolioModalOpen(true);
-    const handleClose = () => setHandlePortfolioModalOpen(false);
+    const [open, setOpen] = React.useState(false);
+    const [scroll, setScroll] = React.useState();
 
 
+    const handleClose = () => {
+        setOpen(false);
+    };
+    const handleSetScroll = () => {
+
+        setScroll();
+        setOpen(true);
+    };
     return (
         <Grid item xs={12} sm={4} md={4} data-aos={aos} data-aos-duration="2000">
 
-            <Box className="portfolio-card-context-containers">
+            <Box  className="portfolio-card-context-containers">
                 <img src={img_1} alt="" className="image" />
 
                 <Box className="overlay">
@@ -49,7 +58,7 @@ const Portfolio = ({ portfolio }) => {
                         </Typography>
 
                         <Box className='flex justify-around'>
-                            <Box onClick={handleOpenModal} >
+                            <Box onClick={handleSetScroll} >
                                 <BootstrapTooltip
                                     title="Details"
                                     placement="top-end"
@@ -108,7 +117,13 @@ const Portfolio = ({ portfolio }) => {
                     </Box>
                 </Box>
             </Box>
-            <PortfolioDetailsModal handlePortfolioModalOpen={handlePortfolioModalOpen} handleClose={handleClose} portfolio={portfolio} ></PortfolioDetailsModal>
+            <PortfolioDetailsModal
+                handleClose={handleClose}
+                open={open}
+                scroll={scroll}
+                portfolio={portfolio} >
+
+            </PortfolioDetailsModal>
         </Grid>
     );
 };
