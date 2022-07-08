@@ -5,7 +5,15 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      transform: ['hover', 'focus'],
+    },
+    transformOrigin: {
+
+      '24': '6rem',
+
+      'full': '100%',
+    }
   },
   plugins: [],
 }

@@ -35,6 +35,7 @@ export default function Sidebar() {
                                     exact
                                     className="flex items-center gap-4 text-sm text-decoration-none  text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
+                                    onClick={() => setShowSidebar('-left-64')}
                                 >
                                     <img className='icon-sidebar' src={HomeLogo} alt="" />
 
@@ -46,6 +47,7 @@ export default function Sidebar() {
                                     to="/#aboutMe"
                                     className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
+                                    onClick={() => setShowSidebar('-left-64')}
                                 >
                                     <img className='icon-sidebar' src={AboutMeLogo} alt="" />
                                     About Me
@@ -56,6 +58,7 @@ export default function Sidebar() {
                                     to="/#skills"
                                     className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
+                                    onClick={() => setShowSidebar('-left-64')}
                                 >
                                     <img className='icon-sidebar' src={SkillLogo} alt="" />
                                     Skills
@@ -66,6 +69,7 @@ export default function Sidebar() {
                                     to="/#services"
                                     className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
+                                    onClick={() => setShowSidebar('-left-64')}
                                 >
                                     <img className='icon-sidebar' src={ServiceLogo} alt="" />
                                     Services
@@ -76,6 +80,7 @@ export default function Sidebar() {
                                     to="/#portfolio"
                                     className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
+                                    onClick={() => setShowSidebar('-left-64')}
                                 >
                                     <img className='icon-sidebar' src={PortfoliosLogo} alt="" />
                                     Portfolios
@@ -86,16 +91,18 @@ export default function Sidebar() {
                                     to="/#contact"
                                     className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
+                                    onClick={() => setShowSidebar('-left-64')}
                                 >
                                     <img className='icon-sidebar' src={ContactUsLogo} alt="" />
                                     Contact us
                                 </NavHashLink>
                             </li>
-                            <li className="rounded-lg mb-2">
+                            <li className="rounded-lg mb-2" onClick={() => setShowSidebar('-left-64')}>
                                 <NavLink
                                     to="/blog"
                                     className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
+
                                 >
                                     <img className='icon-sidebar' src={BlogLogo} alt="" />
                                     Blog

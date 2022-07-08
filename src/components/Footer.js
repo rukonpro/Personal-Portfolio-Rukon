@@ -35,8 +35,8 @@ export default function footer() {
             <div className='text-white  font-light row text-center'>
                 <div className='py-2  col-sm-12 col-md-6 col-lg-4'>
                     <small className='font-bold'>Sunamganj 3110, Syleht Bangladesh.</small><br />
-                    <small><CallIcon /> <a className='no-underline text-white' href="tel:+8801765459224">+8801765459224</a> || <a className='no-underline text-white' href="tel:+8801877533747">8801877533747</a></small><br />
-                    <small> <a href="mailto:rukon.js@gmail.com" className='text-white text-decoration-none'><EmailIcon /> rukon.js@gmail.com</a></small>
+                    <small><CallIcon className='animate-ping' /> <a className='no-underline text-white' href="tel:+8801765459224">+8801765459224</a> || <a className='no-underline text-white' href="tel:+8801877533747">8801877533747</a></small><br />
+                    <small> <a href="mailto:rukon.js@gmail.com" className='text-white text-decoration-none'><EmailIcon className='animate-bounce' /> rukon.js@gmail.com</a></small>
                 </div>
                 <div className='text-center py-2 col-sm-12 col-md-6 col-lg-4'>
                     <h4>MD. RUKON UDDIN</h4>
@@ -61,7 +61,7 @@ export default function footer() {
                                     title="Facebook"
                                     placement="top-end"
                                     arrow>
-                                    <FacebookOutlinedIcon className=" text-white" />
+                                    <FacebookOutlinedIcon className=" text-white animate-spin " />
                                 </BootstrapTooltip>
                             </a>
                         </li>
@@ -71,7 +71,7 @@ export default function footer() {
                                     title="Linkedin"
                                     placement="top-end"
                                     arrow>
-                                    <LinkedInIcon className=" text-white" />
+                                    <LinkedInIcon className=" text-white animate-spin " />
                                 </BootstrapTooltip>
                             </a>
 
@@ -83,7 +83,7 @@ export default function footer() {
                                     title="Instagram"
                                     placement="top-end"
                                     arrow>
-                                    <InstagramIcon className=" text-white" />
+                                    <InstagramIcon className=" text-white animate-spin " />
                                 </BootstrapTooltip>
                             </a>
 
@@ -94,7 +94,7 @@ export default function footer() {
                                     title="TwitterIcon"
                                     placement="top-end"
                                     arrow>
-                                    <TwitterIcon className=" text-white" />
+                                    <TwitterIcon className=" text-white animate-spin " />
                                 </BootstrapTooltip>
                             </a>
 
@@ -105,7 +105,7 @@ export default function footer() {
                                     title="Github"
                                     placement="top-end"
                                     arrow>
-                                    <GitHubIcon className=" text-white" />
+                                    <GitHubIcon className=" text-white animate-spin " />
                                 </BootstrapTooltip>
                             </a>
 
@@ -124,7 +124,7 @@ export default function footer() {
                     Copyright &copy; {new Date().getFullYear()}{' '}
                     <span
 
-                        className=" text-yellow-400  font-bold "
+                        className=" text-yellow-400  font-bold animate-ping"
                     >
                         𝑅𝓊𝓀𝑜𝓃
                     </span>
