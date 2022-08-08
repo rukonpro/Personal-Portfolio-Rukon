@@ -10,7 +10,7 @@ import './Home.css';
 
 const Home = () => {
     return (
-        <div id="home" style={{ overflow: "hidden" }}>
+        <div id="home" className='defaultBg' style={{ overflow: "hidden" }}>
             <Header></Header>
             <AboutMe></AboutMe>
             <Skills></Skills>

@@ -2,20 +2,22 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ProfileLogo from './img/photostudio-1-designify.png'
 const Header = () => {
     AOS.init();
     return (
         <div className='header-container'>
             <div className=' name-container'>
                 <div className="header-img">
-                    <img src="https://i.ibb.co/gb1WtxG/Rukon-Pofile-Pic-2.png" alt="" data-aos="zoom-out-left" />
+                    {/* https://i.ibb.co/gb1WtxG/Rukon-Pofile-Pic-2.png */}
+                    <img src={ProfileLogo} alt="" data-aos="zoom-out-left" />
                 </div>
 
-                <h1 className="font-bold" style={{ fontSize: '160%' }} data-aos="zoom-out-right">꧁MD.RUKON UDDIN꧂</h1>
+                <h1 className="titleDesign" style={{ fontSize: '160%' }} data-aos="zoom-out-right ">꧁MD.RUKON UDDIN꧂</h1>
 
 
                 <div className="develop-title">
-                    <Typewriter
+                    <h6 >   <Typewriter
                         options={{
                             strings: ['React Developer', 'Responsive Web Designer', 'MERN Stack Developer'],
                             autoStart: true,
@@ -23,7 +25,7 @@ const Header = () => {
                             cursor: '✍'
 
                         }}
-                    />
+                    /></h6>
                 </div>
                 <div className="flex justify-center items-center">
 

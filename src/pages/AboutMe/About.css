@@ -2,5 +2,29 @@
     background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 55, 255, 0.462)), url(../../img/6oj9176a.png);
     background-size: cover;
     background-attachment: fixed;
-    color: white;
+    
+}
+
+.titleDesign {
+  
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 3em;
+
+    font-weight: 700;
+    color: #30c4ff;
+    text-shadow: 0px 0px 0px #919191,
+        2px 1px 2px #006887,
+        2px 2px 2px #006887,
+        2px 3px 2px #006887,
+        2px 4px 2px #006887,
+        2px 5px 2px #006887,
+        2px 6px 2px #006887,
+        2px 7px 2px #006887,
+        2px 8px 2px #006887,
+        2px 9px 2px #006887,
+    2px 9px 6px  rgb(0, 140, 240),
+    2px 16px 5px rgb(10, 186, 255),
+    2px 20px 25px rgb(70, 206, 255),
+    2px 15px 30px rgb(198, 226, 255);
 }

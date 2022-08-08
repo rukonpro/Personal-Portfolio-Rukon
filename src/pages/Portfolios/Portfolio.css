@@ -1,10 +1,10 @@
-.portfolio-Container {
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 55, 255, 0.462)), url(../../img/6oj9176a.png);
+/* .portfolio-Container {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 55, 255, 0.462)), url(../Header/img/web-g6666afdb1_1920.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    padding: 0;
-}
+   
+} */
 
 .portfolio-card-context-containers {
     position: relative;

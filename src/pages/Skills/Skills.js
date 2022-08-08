@@ -10,8 +10,8 @@ const Skills = () => {
     return (
         <div id="skills" className=' container-fluid h-screen d-flex justify-center items-center skills-container'>
             <section className=" my-5 " id="Skills">
-                <div className="" data-aos="zoom-out-down" data-aos-duration="2000">
-                    <h2 className=" text-5xl fw-bold text-center pb-4 text-pink-400" >SKILLS</h2>
+                <div>
+                    <h2 className=" titleDesign text-center pb-4 " data-aos="zoom-out-down">SKILLS</h2>
                 </div>
                 <div data-aos="zoom-out-down" data-aos-duration="2000"></div>
                 <div className="skills row">

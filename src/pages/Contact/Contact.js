@@ -1,7 +1,5 @@
 import React, { useRef, forwardRef, useState } from 'react';
 import './Contact.css';
-import Input from '@material-tailwind/react/Input';
-import Textarea from '@material-tailwind/react/Textarea';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Stack from '@mui/material/Stack';
@@ -9,7 +7,6 @@ import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 import emailjs from 'emailjs-com';
 import ContactImg from "./img/Contact-img.webp";
-import ContactUs from "./img/contact-us.png";
 import SendIcon from '@mui/icons-material/Send';
 
 
@@ -50,60 +47,6 @@ const Contact = () => {
 
             <div className='container'>
 
-                {/*  <form ref={form} onSubmit={sendEmail} >
-                    <div data-aos="fade-right" data-aos-duration="2000"></div>
-                    <div className=" mt-10 row ">
-                        <div className="  mb-6 font-light col-sm-12 col-md-6 col-lg-6 " data-aos="fade-right" data-aos-duration="2000">
-                            <Input
-                                required
-                                ref={form}
-                                type="text"
-                                style={{ color: 'white' }}
-                                placeholder="Full Name"
-                                name="user_name"
-                                color="purple"
-
-
-                            />
-                        </div>
-                        <div className=" mb-6 font-light col-sm-12 col-md-6 col-lg-6" data-aos="fade-left" data-aos-duration="2000">
-                            <Input
-                                required
-                                style={{ color: 'white' }}
-                                type="email"
-                                color="purple"
-                                placeholder="Email Address"
-                                name="user_email"
-
-                            />
-                        </div>
-                    </div>
-                    <div className="flex flex-wrap ">
-                        <div className="w-full lg:w-12/12  font-light" data-aos="fade-right" data-aos-duration="2000">
-                            <Input
-                                required
-                                style={{ color: 'white', padding: 2 }}
-                                type="text"
-                                color="purple"
-                                placeholder="Subject"
-                                name='subject'
-
-                            />
-                        </div>
-                    </div>
-                    <div className="flex flex-wrap mt-6 font-light" data-aos="fade-right" data-aos-duration="2000">
-                        <Textarea
-                            required
-                            style={{ color: 'white' }}
-                            color="purple"
-                            placeholder="Message"
-                            name="message"
-
-                        />
-                    </div>
-
-                    <button type="submit" className='btn btn-danger my-10 border-0  ' data-aos="fade-left" data-aos-duration="2000">Send Message</button>
-                </form> */}
                 <Stack spacing={2} sx={{ width: '100%' }}>
                     <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
                         <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
@@ -124,20 +67,19 @@ const Contact = () => {
                         <div data-aos="fade-bottom" data-aos-duration="2000">
 
                             <div className="mt-8 text-center" data-aos="fade-right" data-aos-duration="2000">
-                                {/* <img className=' w-full' src={ContactUs} alt={ContactUs} /> */}
-                                <h1 className="text-purple-400 fw-bold text-2xl  pt-28 font-light uppercase" data-aos="zoom-out-down" data-aos-duration="2000">
+                                <h1 className="titleDesign  pt-28" data-aos="zoom-out-down" data-aos-duration="2000">
                                     CONTACT ME
                                 </h1>
                             </div>
                         </div>
-                        <div className="mt-8 text-center" data-aos="fade-left" data-aos-duration="2000">
-                            <img className=' w-full animate-bounce' src={ContactImg} alt={ContactImg} />
+                        <div className="mt-8 text-center" >
+                            <img className=' w-full ' data-aos="fade-right" data-aos-duration="3000" src={ContactImg} alt={ContactImg} />
                         </div>
                     </div>
 
                     <form ref={form} onSubmit={sendEmail}>
                         <div className="">
-                            <div className='mt-8' data-aos="fade-right" data-aos-duration="2000">
+                            <div className='' data-aos="fade-right" data-aos-duration="2000">
                                 <span className="uppercase text-sm text-green-100 font-bold  ">Full Name</span>
                                 <input className="w-full  bg-indigo-900 focus:bg-indigo-700 text-gray-100 mt-2 p-3 rounded-lg focus:shadow-outline transform focus:translate-x-2 transition duration-300 focus:-skew-x-3"
                                     type="text" placeholder="Name" name="user_name" required />

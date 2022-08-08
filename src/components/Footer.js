@@ -9,7 +9,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import Typewriter from 'typewriter-effect';
 import { styled } from '@mui/material/styles';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
-
+import footerLogo from './Application-PNG-File-Download-Free.png';
 
 
 const BootstrapTooltip = styled(({ className, ...props }) => (
@@ -33,26 +33,28 @@ export default function footer() {
         <footer className="AdminNavbar  py-11 px-3 ">
 
             <div className='text-white  font-light row text-center'>
+
+
+                <div className='  col-sm-12 col-md-6 col-lg-4'>
+                    <div className=' d-flex justify-center'>
+                        <img className="w-40  " src={footerLogo} alt="" />
+                    </div>
+
+                </div>
+
+                
                 <div className='py-2  col-sm-12 col-md-6 col-lg-4'>
+
                     <small className='font-bold'>Sunamganj 3110, Syleht Bangladesh.</small><br />
                     <small><CallIcon className='animate-ping' /> <a className='no-underline text-white' href="tel:+8801765459224">+8801765459224</a> || <a className='no-underline text-white' href="tel:+8801877533747">8801877533747</a></small><br />
                     <small> <a href="mailto:rukon.js@gmail.com" className='text-white text-decoration-none'><EmailIcon className='animate-bounce' /> rukon.js@gmail.com</a></small>
                 </div>
-                <div className='text-center py-2 col-sm-12 col-md-6 col-lg-4'>
-                    <h4>MD. RUKON UDDIN</h4>
-                    <div className="develop-title">
-                        <Typewriter
-                            options={{
-                                strings: ['React Developer', 'Responsive Web Designer', 'MERN Stack Developer'],
-                                autoStart: true,
-                                loop: true,
-                                cursor: '✍'
 
-                            }}
-                        />
-                    </div>
-                </div>
+
+
+
                 <div className='text-center py-2 col-sm-12 col-md-6 col-lg-4'>
+
                     <small className=' font-bold py-2'>Social Media</small>
                     <ul className="list-unstyled flex  justify-center mt-2">
                         <li className="mr-6">
@@ -61,7 +63,7 @@ export default function footer() {
                                     title="Facebook"
                                     placement="top-end"
                                     arrow>
-                                    <FacebookOutlinedIcon className=" text-white animate-spin " />
+                                    <FacebookOutlinedIcon className=" text-white " />
                                 </BootstrapTooltip>
                             </a>
                         </li>
@@ -71,7 +73,7 @@ export default function footer() {
                                     title="Linkedin"
                                     placement="top-end"
                                     arrow>
-                                    <LinkedInIcon className=" text-white animate-spin " />
+                                    <LinkedInIcon className=" text-white " />
                                 </BootstrapTooltip>
                             </a>
 
@@ -83,7 +85,7 @@ export default function footer() {
                                     title="Instagram"
                                     placement="top-end"
                                     arrow>
-                                    <InstagramIcon className=" text-white animate-spin " />
+                                    <InstagramIcon className=" text-white " />
                                 </BootstrapTooltip>
                             </a>
 
@@ -94,7 +96,7 @@ export default function footer() {
                                     title="TwitterIcon"
                                     placement="top-end"
                                     arrow>
-                                    <TwitterIcon className=" text-white animate-spin " />
+                                    <TwitterIcon className=" text-white " />
                                 </BootstrapTooltip>
                             </a>
 
@@ -105,7 +107,7 @@ export default function footer() {
                                     title="Github"
                                     placement="top-end"
                                     arrow>
-                                    <GitHubIcon className=" text-white animate-spin " />
+                                    <GitHubIcon className=" text-white " />
                                 </BootstrapTooltip>
                             </a>
 
@@ -124,7 +126,7 @@ export default function footer() {
                     Copyright &copy; {new Date().getFullYear()}{' '}
                     <span
 
-                        className=" text-yellow-400  font-bold animate-ping"
+                        className=" text-yellow-400  font-bold "
                     >
                         𝑅𝓊𝓀𝑜𝓃
                     </span>

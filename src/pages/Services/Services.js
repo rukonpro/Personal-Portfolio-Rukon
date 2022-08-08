@@ -7,12 +7,13 @@ const Services = () => {
     AOS.init();
     return (
         <div id="services"
+            className=' container-fluid  d-flex justify-center items-center skills-container'
             data-aos-offset="300"
             data-aos-easing="ease-in-sine">
-            <div className=' mb-10'>
-                <h1 className=' uppercase font-bold text-4xl text-center pt-32 text-pink-400'>what can i do</h1>
-            </div>
-            <div className='row gap-2  container' style={{ margin: '0px', padding: '20px 10px' }}>
+            <div className='row gap-2  ' style={{ margin: '0px', padding: '20px 10px' }}>
+                <div className=' mb-10'>
+                    <h1 className=' titleDesign text-center pt-32 ' data-aos="zoom-out-down">what can i do</h1>
+                </div>
 
                 <div className='col-lg-12  col-sm-12' data-aos="flip-left"
                     data-aos-easing="ease-out-cubic"
@@ -32,6 +33,8 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
+
+
                 <div className='col-lg-12 col-sm-12' data-aos="flip-right"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000">

@@ -1,7 +1,7 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import { Container, Typography } from '@mui/material';
+import { Container } from '@mui/material';
 import AOS from 'aos';
 import Portfolio from './Portfolio';
 import 'aos/dist/aos.css';
@@ -159,18 +159,17 @@ const Portfolios = () => {
             gitHubCode: 'https://github.com/RnRukon/Programing-Education-Academy',
             aos: 'flip-left'
         },
+    ];
 
-
-
-
-
-    ]
+    
     return (
-        <Box id="portfolio" className="portfolio-Container h-auto pt-52 ">
-            <Container className=''>
-                <Typography variant='h4' className=" text-5xl pb-6 fw-bold text-center  text-pink-400" data-aos="zoom-out-down">
-                    PORTFOLIO
-                </Typography>
+        <Box id="portfolio" className="portfolio-Container  " sx={{ pt: 10 }}>
+
+            <h1 className=" titleDesign text-center" data-aos="zoom-out-down">
+                PORTFOLIO
+            </h1>
+            <Container className='' sx={{ py: 10 }}>
+
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={{ xs: 2, md: 3, }} columns={{ xs: 4, sm: 8, md: 12 }}>
 
