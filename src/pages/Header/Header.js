@@ -6,11 +6,10 @@ import ProfileLogo from './img/photostudio-1-designify.png'
 const Header = () => {
     AOS.init();
     return (
-        <div className='header-container'>
+        <div className='header-container '>
             <div className=' name-container'>
-                <div className="header-img">
-                    {/* https://i.ibb.co/gb1WtxG/Rukon-Pofile-Pic-2.png */}
-                    <img src={ProfileLogo} alt="" data-aos="zoom-out-left" />
+                <div className="header-img ">
+                    <img className='h-auto w-auto ' src={ProfileLogo} alt="" data-aos="zoom-out-left" />
                 </div>
 
                 <h1 className="titleDesign" style={{ fontSize: '160%' }} data-aos="zoom-out-right ">꧁MD.RUKON UDDIN꧂</h1>

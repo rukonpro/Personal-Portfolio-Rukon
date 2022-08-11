@@ -11,9 +11,9 @@ const Counters = () => {
             {<div className="container ">
 
                 <div className="row flex justify-center">
-                    <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                         <div className="employees">
-                            <p className="counter-count">
+                            <p className="counterText">
                                 <CountUp
                                     start={100}
                                     end={1}
@@ -30,9 +30,9 @@ const Counters = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                         <div className="customer">
-                            <p className="counter-count">
+                            <p className="counterText">
                                 <CountUp
                                     start={0}
                                     end={20}
@@ -49,9 +49,9 @@ const Counters = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                         <div className="design">
-                            <p className="counter-count">
+                            <p className="counterText">
                                 <CountUp
                                     start={0}
                                     end={98}

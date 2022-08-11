@@ -13,7 +13,7 @@
 
 .counter-count {
     font-size: 40px;
-    background-color: #004f80;
+    background-color: #004f8035;
     border-radius: 50%;
     position: relative;
     font-weight: 900;
@@ -28,7 +28,9 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     display: inline-block;
-    box-shadow: 2px 3px 4px #009dff;
+    box-shadow: 2px 3px 4px 1px #4dcdff;
+    cursor:grabbing;
+    
 
 }
 
@@ -38,4 +40,59 @@
     line-height: 34px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
+    cursor: pointer;
 }
+
+.counterText {
+     
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 1em;
+    font-weight: 700;
+    color: #f6feff;
+
+    border-radius: 50%;
+    text-shadow: 
+        0px 1px 1px #00e1ff,
+        0px 1px 1px #00e1ff,
+        0px 2px 1px #00e1ff,
+        0px 3px 1px #00e1ff,
+        0px 4px 1px #00e1ff,
+        0px 5px 1px #00e1ff,
+        0px 6px 1px #00e1ff,
+       
+    1px 1px 3px rgba(255, 250, 107, 0.4),
+    1px 2px 5px rgba(16,16,16,0.2),
+    1px 2px 20px rgba(16,16,16,0.2),
+    1px 3px 30px rgba(16,16,16,0.4);
+
+
+    box-shadow: 
+    1px 1px 1px #00e1ff,
+    1px 2px 1px #00e1ff,
+    1px 3px 1px #00e1ff,
+    1px 4px 1px #00e1ff,
+    1px 5px 1px #00e1ff,
+    1px 6px 1px #00e1ff,
+    1px 7px 1px #00e1ff,
+    1px 8px 1px #00e1ff,
+   
+1px 1px 3px rgba(16, 16, 16, 0.4),
+1px 2px 5px rgba(16,16,16,0.2),
+1px 2px 20px rgba(16,16,16,0.2),
+1px 3px 30px rgba(16,16,16,0.4);
+    
+}
+
+
+.counterText {
+    width: 100%;
+   
+    font-family: 'Lato', sans-serif;
+  
+    font-size: 4.5rem;
+  
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+  }
