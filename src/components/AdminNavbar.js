@@ -6,9 +6,23 @@ import { useLocation } from 'react-router';
 
 
 export default function AdminNavbar({ showSidebar, setShowSidebar }) {
-    const location = useLocation().pathname;
+    const hash = useLocation().hash;
+    const pathname = useLocation().pathname;
 
 
+    const title = () => {
+        if (hash === '#home') {
+            return "Rukon Uddin";
+        }
+        else if (hash === "" && pathname === "/") {
+            return "Rukon Uddin";
+        }
+
+        else {
+            return hash?.replace('#', '') || pathname.replace('/', '');
+        }
+    }
+  
     return (
         <nav className="AdminNavbar md:ml-64 py-4 px-3 fixed w-screen index-100">
             <div className="container max-w-full mx-auto flex items-center justify-between md:pr-8 md:pl-10">
@@ -44,9 +58,8 @@ export default function AdminNavbar({ showSidebar, setShowSidebar }) {
 
                 <div className="flex justify-between items-center w-full">
                     <button className="uppercase text-white text-sm tracking-wider font-bold mt-1 cursor-pointer">
-                        {location === '/'
-                            ? 'Rukon Uddin'
-                            : location.toUpperCase().replace('/', '')}
+                        {/* {hash === '#home' ? 'Rukon Uddin' : hash?.replace('#', '') || pathname.replace('/', 'Rukon Uddin')} */}
+                        {title()}
                     </button>
 
 

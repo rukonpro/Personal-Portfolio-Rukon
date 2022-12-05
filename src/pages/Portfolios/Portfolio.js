@@ -28,8 +28,6 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
 const Portfolio = ({ portfolio }) => {
     const { img_1, title, description, gitHubCode, liveSite, serverCode, aos } = portfolio;
 
-    const [handlePortfolioModalOpen, setHandlePortfolioModalOpen] = React.useState(false);
-    const handleOpenModal = () => setHandlePortfolioModalOpen(true);
     const [open, setOpen] = React.useState(false);
     const [scroll, setScroll] = React.useState();
 

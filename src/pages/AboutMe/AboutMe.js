@@ -6,7 +6,7 @@ import AboutImg from './img/dev-html.png';
 const AboutMe = () => {
     AOS.init();
     return (
-        <div id="aboutMe" className=' container-fluid  d-flex justify-center items-center skills-container pt-32' >
+        <div id="aboutMe" className=' container-fluid d-flex justify-center items-center skills-container pt-32' >
             <div className=' container px-2' >
                 <div className=" flex justify-center mb-5" >
                     <h1 className="titleDesign" data-aos="zoom-out-down">ABOUT ME</h1>

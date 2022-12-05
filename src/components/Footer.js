@@ -87,7 +87,7 @@ export default function footer() {
                         <li className='mr-2'>
                             <a href="https://join.skype.com/invite/yXu1Kxuk8hZF" target="_blank" rel="noopener noreferrer">
                                 <BootstrapTooltip
-                                    title="Github"
+                                    title="Skype"
                                     placement="top-end"
                                     arrow>
                                     <Avatar alt="Travis Howard" src={SkypeIcon} />

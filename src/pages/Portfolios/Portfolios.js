@@ -97,7 +97,7 @@ const Portfolios = () => {
             list1: 'Users can add a orders, review orders, Delete orders, place order and Chatting another user.',
             list2: 'Admin can manage all order,Add a Product,Update Product,Delete Product and set user roles.',
             list3: 'User authentication firebase login with google,Create Account and login.',
-            liveSite: 'https://shop-mart-f89cb.web.app',
+            liveSite: 'https://shop-mart-80ef1.web.app',
             gitHubCode: 'https://github.com/RnRukon/Shop-mart-client-site-code',
             serverCode: 'https://github.com/RnRukon/Shop-mart-server-code',
             aos: 'flip-left'
@@ -161,7 +161,7 @@ const Portfolios = () => {
         },
     ];
 
-    
+
     return (
         <Box id="portfolio" className="portfolio-Container  " sx={{ pt: 10 }}>
 

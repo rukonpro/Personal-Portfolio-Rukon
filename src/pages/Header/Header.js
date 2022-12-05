@@ -6,7 +6,7 @@ import ProfileLogo from './img/photostudio-1-designify.png'
 const Header = () => {
     AOS.init();
     return (
-        <div className='header-container '>
+        <div className='header-container'>
             <div className=' name-container'>
                 <div className="header-img ">
                     <img className='h-auto w-auto ' src={ProfileLogo} alt="" data-aos="zoom-out-left" />

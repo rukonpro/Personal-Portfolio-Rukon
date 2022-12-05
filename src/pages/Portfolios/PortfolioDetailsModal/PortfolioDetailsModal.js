@@ -1,8 +1,5 @@
 import React from 'react';
-import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
-import Fade from '@mui/material/Fade';
 import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import StorageOutlinedIcon from '@mui/icons-material/StorageOutlined';
@@ -27,17 +24,7 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
 }));
 
 
-/* const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 'auto',
-    bgcolor: 'background.paper',
-    border: 0,
-    boxShadow: 24,
 
-}; */
 
 const PortfolioDetailsModal = ({ handleClose, open, scroll, portfolio }) => {
 

@@ -18,6 +18,7 @@ const Home = () => {
             <Portfolios></Portfolios>
             <Counters></Counters>
             <Contact></Contact>
+            
         </div>
     );
 };
