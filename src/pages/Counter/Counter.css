@@ -1,7 +1,8 @@
 .counter {
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 55, 255, 0.462)), url(../Header/img/wallpaperflare.com_wallpaper.jpg);
+    background-image: linear-gradient(to top, rgba(255, 240, 240, 0), rgba(0, 0, 0, 0.212)), url(../Header/img/wallpaperflare.com_wallpaper.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position:left;
     text-align: center;
 
 }
@@ -28,7 +29,6 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     display: inline-block;
-    box-shadow: 2px 3px 4px 1px #4dcdff;
     cursor:grabbing;
     
 

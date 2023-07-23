@@ -1,8 +1,9 @@
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    './public/**/*.html',
+    './src/**/*.{js,jsx,ts,tsx,vue}',
   ],
-  purge: [],
+
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
@@ -19,4 +20,5 @@ module.exports = {
     }
   },
   plugins: [],
+  
 }

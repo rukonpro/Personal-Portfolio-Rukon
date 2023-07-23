@@ -13,16 +13,19 @@
 
     font-weight: 700;
     color: #30c4ff;
-    text-shadow: 0px 0px 0px #919191,
-        2px 1px 2px #006887,
-        2px 2px 2px #006887,
-        2px 3px 2px #006887,
-        2px 4px 2px #006887,
-        2px 5px 2px #006887,
-        2px 6px 2px #006887,
-       
-    2px 9px 6px  rgb(0, 140, 240),
-    2px 16px 5px rgb(10, 186, 255),
-    2px 20px 25px rgb(70, 206, 255),
-    2px 15px 20px rgb(198, 226, 255);
+    text-shadow:  0px 1px 1px #00e1ff,
+    0px 1px 1px #00e1ff,
+    0px 2px 1px #00e1ff,
+    0px 3px 1px #00e1ff,
+    0px 4px 1px #00e1ff,
+    0px 5px 1px #00e1ff,
+    0px 6px 1px #00e1ff,
+   
+1px 1px 3px rgba(255, 250, 107, 0.4),
+1px 2px 5px rgba(16,16,16,0.2),
+1px 2px 20px rgba(16,16,16,0.2),
+1px 3px 30px rgba(16,16,16,0.4);
+
+
+
 }

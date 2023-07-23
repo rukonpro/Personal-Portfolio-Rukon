@@ -10,6 +10,8 @@ import PortfoliosLogo from '../img/4299715.png'
 import ContactUsLogo from '../img/2343522.png'
 import BlogLogo from '../img/3959542.png'
 import { useLocation } from 'react-router-dom';
+import Button from '@material-tailwind/react/Button';
+import Icon from '@material-tailwind/react/Icon';
 import "./Sidebar.css";
 
 export default function Sidebar() {
@@ -19,17 +21,36 @@ export default function Sidebar() {
 
 
     return (
-        <>
-            <AdminNavbar
-                showSidebar={showSidebar}
-                setShowSidebar={setShowSidebar}
-            />
+        <div className=''>
+            <div className=' md:hidden'>
+                <AdminNavbar
+                    showSidebar={showSidebar}
+                    setShowSidebar={setShowSidebar}
+                />
+            </div>
             <div
-                className={` navar-bg fixed top-0 md:left-0 ${showSidebar}  flex-row flex-nowrap  shadow-xl  w-64 z-10 py-4 px-6 transition-all duration-300`}
+                className={` bg-gray-900 fixed top-0 md:left-0 ${showSidebar}  flex-row flex-nowrap  shadow-xl  w-64 z-50 py-4 px-6 transition-all duration-300`}
             >
 
                 <div>
-                    <H6 className="mt-2 text-center" color="yellow"> Web Developer</H6>
+                    <div className='flex justify-between items-center'>
+                        <H6 className="mt-2 text-center" color="yellow"> Web Developer</H6>
+                        <div
+                            className={'md:hidden'}
+                        >
+                            <Button
+                                color="transparent"
+                                buttonType="link"
+                                size="lg"
+                                iconOnly
+                                rounded
+                                ripple="light"
+                                onClick={() => setShowSidebar('-left-64')}
+                            >
+                                <Icon name="close" size="2xl" color="white" />
+                            </Button>
+                        </div>
+                    </div>
                     <hr className="mt-4 mb-0 min-w-full text-white " />
                 </div>
                 <div className="flex-col items-stretch min-h-full h-screen flex-nowrap px-0   sm:h-screen overflow-auto scroll-hidden">
@@ -42,7 +63,7 @@ export default function Sidebar() {
                                     to={"/#home"}
                                     exact
 
-                                    className={hash === "" && pathname === "/" ? 'flex items-center gap-4 text-sm text-decoration-none text-white font-light px-3 py-2 rounded-lg bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md' : 'flex items-center gap-4 text-sm text-decoration-none text-white font-light px-3 py-2 rounded-lg'}
+                                    className={hash === "" && pathname === "/" ? 'flex items-center gap-4 text-sm text-decoration-none text-white font-light px-3 py-2 rounded-lg bg-gradient-to-tr from-light-blue-500 to-light-blue-700  shadow-md' : 'flex items-center gap-4 text-sm text-decoration-none text-white font-light px-3 py-2 rounded-lg'}
 
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                     onClick={() => setShowSidebar('-left-64')}
@@ -129,6 +150,6 @@ export default function Sidebar() {
             </div>
             <div>
             </div>
-        </>
+        </div>
     );
 }
