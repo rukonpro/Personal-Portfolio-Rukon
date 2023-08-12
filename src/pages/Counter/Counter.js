@@ -15,8 +15,8 @@ const Counters = () => {
                         <div className="employees">
                             <p className="counterText">
                                 <CountUp
-                                    start={100}
-                                    end={1}
+                                    start={0}
+                                    end={2}
                                     duration={5}
                                 >
                                     {({ countUpRef, start }) => (
@@ -36,7 +36,7 @@ const Counters = () => {
                                 <CountUp
                                     start={0}
                                     end={20}
-                                    duration={5}
+                                    duration={2}
                                 >
                                     {({ countUpRef, start }) => (
                                         <VisibilitySensor onChange={start}>

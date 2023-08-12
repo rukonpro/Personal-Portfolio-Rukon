@@ -2,26 +2,26 @@ import React from 'react';
 import Button from '@material-tailwind/react/Button';
 import Icon from '@material-tailwind/react/Icon';
 import "@material-tailwind/react/tailwind.css";
-import { useLocation } from 'react-router';
+// import { useLocation } from 'react-router';
 
 
 export default function AdminNavbar({ setShowSidebar }) {
-    const hash = useLocation().hash;
-    const pathname = useLocation().pathname;
+    /*  const hash = useLocation().hash;
+     const pathname = useLocation().pathname; */
 
 
-    const title = () => {
-        if (hash === '#home') {
-            return "Rukon Uddin";
-        }
-        else if (hash === "" && pathname === "/") {
-            return "Rukon Uddin";
-        }
-
-        else {
-            return hash?.replace('#', '') || pathname.replace('/', '');
-        }
-    }
+    /*  const title = () => {
+         if (hash === '#home') {
+             return "Rukon Uddin";
+         }
+         else if (hash === "" && pathname === "/") {
+             return "Rukon Uddin";
+         }
+ 
+         else {
+             return hash?.replace('#', '') || pathname.replace('/', '');
+         }
+     } */
 
     return (
         <nav className=" bg-gray-900  md:ml-64 py-4 px-3 fixed  z-40 w-screen index-100">
@@ -41,12 +41,12 @@ export default function AdminNavbar({ setShowSidebar }) {
 
                 </div>
 
-                <div className="flex justify-between items-center w-full">
-                    <button className="uppercase text-white text-sm tracking-wider font-bold mt-1 cursor-pointer">
-                        {/* {hash === '#home' ? 'Rukon Uddin' : hash?.replace('#', '') || pathname.replace('/', 'Rukon Uddin')} */}
-                        {title()}
-                    </button>
+                <div className="flex justify-end items-center w-full">
 
+                    <button>
+                        <h1 className='text-lg cursor-pointer'><span className='text-white'>Rukon.</span><span className='text-green-400'>JS</span></h1>
+
+                    </button>
 
                 </div>
             </div>

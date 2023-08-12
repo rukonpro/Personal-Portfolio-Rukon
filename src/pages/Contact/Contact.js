@@ -102,7 +102,7 @@ const Contact = () => {
 
                                     <button
                                         type="submit"
-                                        className="uppercase  w-full hover:animate-bounce text-sm font-bold tracking-wide bg-indigo-600 hover:bg-indigo-700 text-green-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline  ">
+                                        className="uppercase   hover:animate-bounce text-sm font-bold tracking-wide bg-gray-600 hover:bg-gray -700 text-green-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline  ">
                                         <SendIcon className='animate-bounce' /> Send Message
                                     </button>
                                 </div>
