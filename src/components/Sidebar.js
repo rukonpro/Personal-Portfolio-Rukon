@@ -23,7 +23,9 @@ export default function Sidebar() {
             id: 1,
             path: "/#home",
             name: "Home",
-            icon: HomeLogo
+            icon: HomeLogo,
+            pathname: pathname,
+            hash: hash
         },
         {
             id: 2,
@@ -106,9 +108,7 @@ export default function Sidebar() {
                                     <li key={i} className="rounded-lg mb-4 pl-0">
                                         <NavHashLink
                                             to={menu.path}
-                                            exact
-
-                                            className={hash === "" && pathname === "/" ? 'flex items-center gap-4 !font-bold text-decoration-none text-white  px-3 py-2 rounded-lg bg-gradient-to-tr from-light-blue-500 to-light-blue-700  shadow-md' : 'flex items-center gap-4 text-sm text-decoration-none text-white font-light px-3 py-2 rounded-lg'}
+                                            className={menu.hash === "" && menu.pathname === "/" ? 'flex items-center gap-4 !font-bold no-underline text-white  px-3 py-2 rounded-lg bg-gradient-to-tr from-green-600 to-blue-800 shadow-md' : 'flex items-center gap-4 text-sm text-decoration-none text-white font-light px-3 py-2 rounded-lg'}
 
                                             activeClassName="bg-gradient-to-tr from-green-600 to-blue-800   text-white shadow-md transition ease-in-out delay-150  duration-300"
                                             onClick={() => setShowSidebar('-left-64')}
