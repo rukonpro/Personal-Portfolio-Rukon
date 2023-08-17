@@ -2,7 +2,8 @@ import React from 'react';
 import Button from '@material-tailwind/react/Button';
 import Icon from '@material-tailwind/react/Icon';
 import "@material-tailwind/react/tailwind.css";
-// import { useLocation } from 'react-router';
+import { NavHashLink } from 'react-router-hash-link';
+
 
 
 export default function AdminNavbar({ setShowSidebar }) {
@@ -25,7 +26,7 @@ export default function AdminNavbar({ setShowSidebar }) {
 
     return (
         <nav className=" bg-gray-900  md:ml-64 py-4 px-3 fixed  z-40 w-screen index-100">
-            <div className="container max-w-full mx-auto flex items-center justify-between md:pr-8 md:pl-10">
+            <div className="container w-full mx-auto flex items-center md:justify-end justify-between md:pr-8 md:pl-10">
                 <div className="md:hidden">
                     <Button
                         color="transparent"
@@ -41,12 +42,14 @@ export default function AdminNavbar({ setShowSidebar }) {
 
                 </div>
 
-                <div className="flex justify-end items-center w-full">
+                <div className="flex justify-end items-center ">
 
-                    <button>
-                        <h1 className='text-lg cursor-pointer'><span className='text-white'>Rukon.</span><span className='text-green-400'>JS</span></h1>
+                    <NavHashLink to="/#home">
+                        <button className='font-extrabold'>
+                            <h1 className='text-lg cursor-pointer font-extrabold '><span className='text-white '>Rukon<span className='text-amber-500'>.</span></span><span className='text-green-400 text-2xl '>JS</span></h1>
 
-                    </button>
+                        </button>
+                    </NavHashLink>
 
                 </div>
             </div>

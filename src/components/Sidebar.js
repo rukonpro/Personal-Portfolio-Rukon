@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import H6 from '@material-tailwind/react/Heading6';
 import { NavHashLink } from 'react-router-hash-link';
 import AdminNavbar from './AdminNavbar';
 import HomeLogo from '../img/4059356.png'
@@ -19,10 +18,54 @@ export default function Sidebar() {
     const hash = useLocation().hash;
     const pathname = useLocation().pathname;
 
+    const menuData = [
+        {
+            id: 1,
+            path: "/#home",
+            name: "Home",
+            icon: HomeLogo
+        },
+        {
+            id: 2,
+            path: "/#aboutMe",
+            name: "About Me",
+            icon: AboutMeLogo,
+        },
+        {
+            id: 3,
+            path: "/#skills",
+            name: "Skills",
+            icon: SkillLogo
+        },
+        {
+            id: 4,
+            path: "/#services",
+            name: "Services",
+            icon: ServiceLogo
+        },
+        {
+            id: 5,
+            path: "/#portfolio",
+            name: "Portfollio",
+            icon: PortfoliosLogo
+        },
+        {
+            id: 6,
+            path: "/#contact",
+            name: "Contact",
+            icon: ContactUsLogo
+        },
+        {
+            id: 7,
+            path: "/blog",
+            name: "Blogs",
+            icon: BlogLogo
+        },
+    ]
 
     return (
-        <div className=''>
-            <div className=' md:hidden'>
+        <div >
+            <div >
                 <AdminNavbar
                     showSidebar={showSidebar}
                     setShowSidebar={setShowSidebar}
@@ -34,7 +77,7 @@ export default function Sidebar() {
 
                 <div>
                     <div className='flex justify-between items-center'>
-                        <H6 className="mt-2 text-center" color="yellow"> Web Developer</H6>
+                        <h1 className="mt-2 text-center text-green-400 text-2xl font-bold font-mono"> Web Developer</h1>
                         <div
                             className={'md:hidden'}
                         >
@@ -58,89 +101,26 @@ export default function Sidebar() {
 
                     <div className="flex flex-col pr-2">
                         <ul className="flex-col  min-w-full flex list-none  ">
-                            <li className="rounded-lg mb-4 pl-0">
-                                <NavHashLink
-                                    to={"/#home"}
-                                    exact
+                            {
+                                menuData?.map((menu, i) => (
+                                    <li key={i} className="rounded-lg mb-4 pl-0">
+                                        <NavHashLink
+                                            to={menu.path}
+                                            exact
 
-                                    className={hash === "" && pathname === "/" ? 'flex items-center gap-4 text-sm text-decoration-none text-white font-light px-3 py-2 rounded-lg bg-gradient-to-tr from-light-blue-500 to-light-blue-700  shadow-md' : 'flex items-center gap-4 text-sm text-decoration-none text-white font-light px-3 py-2 rounded-lg'}
+                                            className={hash === "" && pathname === "/" ? 'flex items-center gap-4 !font-bold text-decoration-none text-white  px-3 py-2 rounded-lg bg-gradient-to-tr from-light-blue-500 to-light-blue-700  shadow-md' : 'flex items-center gap-4 text-sm text-decoration-none text-white font-light px-3 py-2 rounded-lg'}
 
-                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
-                                    onClick={() => setShowSidebar('-left-64')}
-                                >
-                                    <img className='icon-sidebar' src={HomeLogo} alt="" />
+                                            activeClassName="bg-gradient-to-tr from-green-600 to-blue-800   text-white shadow-md transition ease-in-out delay-150  duration-300"
+                                            onClick={() => setShowSidebar('-left-64')}
+                                        >
+                                            <img className='icon-sidebar' src={menu.icon} alt="" />
 
-                                    home
-                                </NavHashLink>
-                            </li>
-                            <li className="rounded-lg mb-2">
-                                <NavHashLink
-                                    to="/#aboutMe"
-                                    className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-3 py-2 rounded-lg"
-                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
-                                    onClick={() => setShowSidebar('-left-64')}
-                                >
-                                    <img className='icon-sidebar' src={AboutMeLogo} alt="" />
-                                    About Me
-                                </NavHashLink>
-                            </li>
-                            <li className="rounded-lg mb-2">
-                                <NavHashLink
-                                    to="/#skills"
-                                    className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-3 py-2 rounded-lg"
-                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
-                                    onClick={() => setShowSidebar('-left-64')}
-                                >
-                                    <img className='icon-sidebar' src={SkillLogo} alt="" />
-                                    Skills
-                                </NavHashLink>
-                            </li>
-                            <li className="rounded-lg mb-2">
-                                <NavHashLink
-                                    to="/#services"
-                                    className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-3 py-2 rounded-lg"
-                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
-                                    onClick={() => setShowSidebar('-left-64')}
-                                >
-                                    <img className='icon-sidebar' src={ServiceLogo} alt="" />
-                                    Services
-                                </NavHashLink>
-                            </li>
-                            <li className="rounded-lg mb-2">
-                                <NavHashLink
-                                    to="/#portfolio"
-                                    className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-3 py-2 rounded-lg"
-                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
-                                    onClick={() => setShowSidebar('-left-64')}
-                                >
-                                    <img className='icon-sidebar' src={PortfoliosLogo} alt="" />
-                                    Portfolios
-                                </NavHashLink>
-                            </li>
-                            <li className="rounded-lg mb-2">
-                                <NavHashLink
-                                    to="/#contact"
-                                    className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-3 py-2 rounded-lg"
-                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
-                                    onClick={() => setShowSidebar('-left-64')}
-                                >
-                                    <img className='icon-sidebar' src={ContactUsLogo} alt="" />
-                                    Contact us
-                                </NavHashLink>
-                            </li>
-                            <li className="rounded-lg mb-2"
-                                onClick={() => setShowSidebar('-left-64')}
-                            >
-                                <NavHashLink
-                                    to="/blog"
-                                    className="flex items-center gap-4 text-sm text-decoration-none text-white font-light px-3 py-2 rounded-lg"
-                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
+                                            {menu?.name}
+                                        </NavHashLink>
+                                    </li>
+                                ))
+                            }
 
-                                >
-                                    <img className='icon-sidebar' src={BlogLogo} alt="" />
-                                    Blog
-                                </NavHashLink>
-                            </li>
 
                         </ul>
                     </div>
