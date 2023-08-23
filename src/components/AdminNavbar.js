@@ -3,7 +3,7 @@ import Button from '@material-tailwind/react/Button';
 import Icon from '@material-tailwind/react/Icon';
 import "@material-tailwind/react/tailwind.css";
 import { NavHashLink } from 'react-router-hash-link';
-
+import Logo from "../img/rukon.js.png"
 
 
 export default function AdminNavbar({ setShowSidebar }) {
@@ -46,7 +46,13 @@ export default function AdminNavbar({ setShowSidebar }) {
 
                     <NavHashLink to="/#home">
                         <button className='font-extrabold'>
-                            <h1 className='text-lg cursor-pointer font-extrabold '><span className='text-white '>Rukon<span className='text-amber-500'>.</span></span><span className='text-green-400 text-2xl '>JS</span></h1>
+                            {/*  <h1 className='text-lg cursor-pointer font-extrabold '>
+                                <span className='text-white '>Rukon<span className='text-amber-500'>.</span>
+                                </span><span className='text-green-400 text-2xl '>JS</span>
+                            </h1> */}
+                            <img
+                                className='h-10'
+                                src={Logo} alt={Logo}></img>
 
                         </button>
                     </NavHashLink>

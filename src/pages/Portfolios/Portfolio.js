@@ -43,8 +43,8 @@ const Portfolio = ({ portfolio }) => {
     return (
         <Grid item xs={12} sm={12} md={4} data-aos={aos} data-aos-duration="2000">
 
-            <Box className="portfolio-card-context-containers">
-                <img src={img_1} alt="" className="image" />
+            <Box className="portfolio-card-context-containers ">
+                <img src={img_1} alt="" className="image " />
 
                 <Box className="overlay">
                     <Box className="portfolioContent">

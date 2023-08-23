@@ -9,7 +9,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Blog from './pages/Blog/Blog';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
+
 function App() {
+
   return (
     <>
       <Router>
@@ -22,7 +24,7 @@ function App() {
             <Route exact path="/blog">
               <Blog></Blog>
             </Route>
-            <Route  path="*">
+            <Route path="*">
               <NotFoundPage></NotFoundPage>
             </Route>
           </Switch>
