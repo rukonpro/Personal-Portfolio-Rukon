@@ -165,11 +165,11 @@ const Portfolios = () => {
     return (
         <Box id="portfolio" className="portfolio-Container  " sx={{ pt: 10 }}>
 
-            <h1 className=" titleDesign text-center" data-aos="zoom-out-down">
-                PORTFOLIO
-            </h1>
-            <Container className='' sx={{ py: 10 }}>
 
+            <Container className='' sx={{ py: 10 }}>
+                <h1 className='pb-3' data-aos="zoom-out-down">
+                    Portfolio
+                </h1>
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={{ xs: 2, md: 3, }} columns={{ xs: 4, sm: 8, md: 12 }}>
 

@@ -6,16 +6,15 @@ import AboutImg from './img/dev-html.png';
 const AboutMe = () => {
     AOS.init();
     return (
-        <div id="aboutMe" className=' container-fluid d-flex justify-center items-center skills-container pt-32' >
+        <div id="aboutMe" className=' container-fluid  d-flex justify-center items-center skills-container pt-32' >
             <div className=' container px-2' >
-                <div className=" flex justify-center mb-5" >
-                    <h1 className="titleDesign" data-aos="zoom-out-down">ABOUT ME</h1>
-                </div>
-                <div className=' row'>
-                    <div className=' col-sm-12 col-md-12 col-lg-6'>
-                        <img data-aos="fade-right" data-aos-duration="2000" src={AboutImg} alt="" />
-                    </div>
-                    <div className=' col-sm-12 col-md-12 col-lg-6 ' data-aos="fade-left" data-aos-duration="2000">
+
+
+
+                <div className=' row flex-row-reverse'>
+
+                    <div className=' col-sm-12 col-md-12 col-lg-6 mb-5' data-aos="fade-left" data-aos-duration="2000">
+                        <h1 className='py-3 ' data-aos="zoom-out-down">ABOUT ME</h1>
                         <p style={{ textAlign: "justify", fontWeight: 'bold' }}>Hello! <br /> I am a Junior Web Developer,React Developer, MERN stack developer, or a JavaScript enthusiast. <br /><br />
 
                             I have good knowledge of building web applications with React.js for the client-side, Node.js / express.js for the server-side, and MongoDB for the database.
@@ -36,6 +35,9 @@ const AboutMe = () => {
                             </a>
 
                         </div>
+                    </div>
+                    <div className=' col-sm-12 col-md-12 col-lg-6'>
+                        <img data-aos="fade-right" data-aos-duration="2000" src={AboutImg} alt="" />
                     </div>
                 </div>
 

@@ -20,7 +20,7 @@ export default function Sidebar() {
     const pathname = useLocation().pathname;
 
 
-    useDocumentTitle(`Rukon.js ${hash && "▷" + hash.toLocaleUpperCase().replace("#", "") || "▷" + pathname.toLocaleUpperCase().replace("/", "")}`)
+    useDocumentTitle(`Rukon.js${hash && "➔" + hash.toLocaleUpperCase().replace("#", "") || "➔" + pathname.toLocaleUpperCase().replace("/", "")}`)
 
     const menuData = [
         {

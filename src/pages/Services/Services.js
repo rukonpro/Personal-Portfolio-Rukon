@@ -15,7 +15,7 @@ const Services = () => {
             data-aos-easing="ease-in-sine">
 
             <div className=' mb-10'>
-                <h1 className=' titleDesign text-center pt-32 ' data-aos="zoom-out-down">what can i do</h1>
+                <h1 className=' pt-32 ' data-aos="zoom-out-down">what can i do</h1>
             </div>
             <div className='row'>
 

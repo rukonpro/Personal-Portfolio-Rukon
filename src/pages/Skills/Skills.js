@@ -16,7 +16,7 @@ const Skills = () => {
         <section id="skills" className=' container  items-center '>
             <div className=" my-5 ">
                 <div>
-                    <h2 className=" titleDesign text-center pb-4 " data-aos="zoom-out-down">SKILLS</h2>
+                    <h2 className=" pb-4 " data-aos="zoom-out-down">SKILLS</h2>
                 </div>
                 <div data-aos="zoom-out-down" data-aos-duration="2000"></div>
                 <div className="row ">

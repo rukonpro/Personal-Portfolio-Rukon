@@ -45,7 +45,7 @@ const Contact = () => {
     return (
         <div id="contact" className='container'  >
 
-            <div className=''>
+            <div >
 
                 <Stack spacing={2} sx={{ width: '100%' }}>
                     <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
@@ -60,14 +60,7 @@ const Contact = () => {
 
 
                 <div className="py-20">
-                    <div data-aos="fade-bottom" data-aos-duration="2000">
 
-                        <div className="text-center pb-20" data-aos="fade-right" data-aos-duration="2000">
-                            <h1 className="titleDesign " data-aos="zoom-out-down" data-aos-duration="2000">
-                                CONTACT ME
-                            </h1>
-                        </div>
-                    </div>
                     <div className='row'>
                         <div className="col-sm-12 col-md-12 col-lg-6 ">
 
@@ -77,32 +70,35 @@ const Contact = () => {
                         </div>
 
                         <form className='col-sm-12 col-md-12 col-lg-6' ref={form} onSubmit={sendEmail}>
-                            <div className="">
-                                <div className='' data-aos="fade-right" data-aos-duration="2000">
+                            <div >
+                                <h1 data-aos="zoom-out-down" data-aos-duration="2000">
+                                    CONTACT ME
+                                </h1>
+                                <div data-aos="fade-right" data-aos-duration="2000">
                                     <span className="uppercase text-sm text-green-100 font-bold  ">Full Name</span>
-                                    <input className="w-full  bg-indigo-900 focus:bg-indigo-700 text-gray-100 mt-2 p-3 rounded-lg focus:shadow-outline transform focus:translate-x-2 transition duration-300 focus:-skew-x-3"
+                                    <input className="w-full bg-transparent shadow-outline border border-spacing-2  text-gray-100 mt-2 py-1 px-2 rounded-lg focus:shadow-outline transform focus:translate-x-2 transition duration-300 focus:-skew-x-3"
                                         type="text" placeholder="Name" name="user_name" required />
                                 </div>
-                                <div className="mt-8" data-aos="fade-left" data-aos-duration="2000">
+                                <div className="mt-2" data-aos="fade-left" data-aos-duration="2000">
                                     <span className="uppercase text-sm text-green-100 font-bold">Email</span>
-                                    <input className="w-full bg-indigo-900 focus:bg-indigo-700 text-green-100 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline transform focus:translate-x-2 transition duration-300 focus:-skew-x-3"
+                                    <input className="w-full bg-transparent shadow-outline border border-spacing-2  text-gray-100 mt-1 py-1 px-2 rounded-lg focus:shadow-outline transform focus:translate-x-2 transition duration-300 focus:-skew-x-3"
                                         type="text" placeholder='Email' name="user_email" required />
                                 </div>
-                                <div className="mt-8" data-aos="fade-right" data-aos-duration="2000">
+                                <div className="mt-2" data-aos="fade-right" data-aos-duration="2000">
                                     <span className="uppercase text-sm text-green-100 font-bold">SubJect</span>
-                                    <input className="w-full bg-indigo-900 focus:bg-indigo-700 text-green-100 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline transform focus:translate-x-2 transition duration-300 focus:-skew-x-3"
+                                    <input className="w-full bg-transparent  border border-spacing-2  text-gray-100 mt-2 py-1 px-2 rounded-lg focus:shadow-outline transform focus:translate-x-2 transition duration-300 focus:-skew-x-3"
                                         type="text" placeholder='SubJect' name="message" required />
                                 </div>
-                                <div className="mt-8" data-aos="fade-left" data-aos-duration="2000">
+                                <div className="mt-2" data-aos="fade-left" data-aos-duration="2000">
                                     <span className="uppercase text-sm text-green-100 font-bold">Message</span>
                                     <textarea
-                                        className="w-full h-32  bg-indigo-900 focus:bg-indigo-700 text-green-100 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline transform focus:translate-x-2 transition duration-300 focus:-skew-x-3 drop-shadow-2xl" placeholder='Message' name="message" required></textarea>
+                                        className="w-full h-32  bg-transparent  border border-spacing-2 text-green-100 mt-1 py-1 px-2 rounded-lg focus:outline-none focus:shadow-outline transform focus:translate-x-2 transition duration-300 focus:-skew-x-3 drop-shadow-2xl" placeholder='Message' name="message" required></textarea>
                                 </div>
                                 <div className="mt-8  " data-aos="fade-right" data-aos-duration="2000">
 
                                     <button
                                         type="submit"
-                                        className="uppercase   hover:animate-bounce text-sm font-bold tracking-wide bg-gray-600 hover:bg-gray -700 text-green-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline  ">
+                                        className="uppercase   hover:animate-bounce text-sm font-bold tracking-wide bg-gray-600 hover:bg-gray -700 text-green-100 p-2 rounded-lg w-full focus:outline-none focus:shadow-outline  ">
                                         <SendIcon className='animate-bounce' /> Send Message
                                     </button>
                                 </div>
