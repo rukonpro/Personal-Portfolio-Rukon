@@ -6,10 +6,10 @@ import ProfileLogo from './img/Tosca White Gradient Company Profile Document A4 
 const Header = () => {
     AOS.init();
     return (
-        <div className=' container header-container  md:h-screen   pt-28  md:pt-0   bg-cover overflow-hidden'>
-            <div className=' grid grid-cols-12 items-center  h-full md:px-40'>
+        <div className=' container  header-container  md:h-screen  w-full  pt-28  md:pt-0   overflow-hidden'>
+            <div className=' grid grid-cols-12 items-center md:px-32 h-full md:py-32'>
 
-                <div className='md:col-span-6 col-span-12 flex justify-start'>
+                <div className='md:col-span-6 col-span-12 '>
                     <div>
                         <div >
                             <h1 className=" text-6xl" data-aos="zoom-out-right ">Hi!</h1>
@@ -47,7 +47,7 @@ const Header = () => {
                 </div>
 
                 <div className=" md:col-span-6 col-span-12 flex justify-end">
-                    <img className='w-auto  h-96 ' src={ProfileLogo} alt="" data-aos="zoom-out-left" />
+                    <img className='w-auto  h-96 lg:h-2/6 ' src={ProfileLogo} alt="" data-aos="zoom-out-left" />
                 </div>
             </div>
         </div>

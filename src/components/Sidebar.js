@@ -78,7 +78,7 @@ export default function Sidebar() {
                 />
             </div>
             <div
-                className={` bg-gray-900 fixed top-0 md:left-0 ${showSidebar}  flex-row flex-nowrap  shadow-xl  w-64 z-50 py-4 px-6 transition-all duration-300`}
+                className={`sidebarContainer  fixed top-0 md:left-0 ${showSidebar}  flex-row flex-nowrap  shadow-xl  w-64 z-50 py-4 px-6 transition-all duration-300 `}
             >
 
                 <div>

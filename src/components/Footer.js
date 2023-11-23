@@ -32,7 +32,7 @@ export default function footer() {
 
 
     return (
-        <footer className="counter  py-11 px-3 ">
+        <footer className=" footerContainer py-11 px-3  ">
 
             <div className='text-white  font-light row text-center'>
 

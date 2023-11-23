@@ -43,7 +43,7 @@ const Contact = () => {
 
 
     return (
-        <div id="contact" className='container'  >
+        <div id="contact" className='container '  >
 
             <div >
 

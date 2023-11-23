@@ -1,17 +1,33 @@
-.header-container {
-  
 
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.475)), url("../Header/img/wallpaperflare.com_wallpaper.jpg");
-    background-repeat: no-repeat;
-}
 .defaultBg{
-    background-image: linear-gradient(to top, rgba(255, 240, 240, 0), rgba(0, 0, 0, 0.212)), url("../Header/img/wallpaperflare.com_wallpaper.jpg");
+    background-image: linear-gradient(to top, rgba(255, 240, 240, 0), rgba(0, 0, 0, 0.212)), url("../Header/img/henrique-malaguti-aUY1iRgollo-unsplash.jpg");
     background-size: cover;
     background-attachment: fixed;
-
     color: rgb(255, 255, 255);
+    background-position:right 
 }
 
+.sidebarContainer{
+    background-image: linear-gradient(to top, rgba(255, 240, 240, 0), rgba(0, 0, 0, 0.212)), url("../Header/img/henrique-malaguti-aUY1iRgollo-unsplash.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: color-dodge;
+}
+.navigationContainer{
+    background-image: linear-gradient(to right, rgba(75, 127, 151, 0.13), rgba(0, 0, 0, 0.322)), url("../Header/img/henrique-malaguti-aUY1iRgollo-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.footerContainer{
+    background-image: linear-gradient(to top, rgba(255, 240, 240, 0), rgba(0, 0, 0, 0.212)), url("../Header/img/henrique-malaguti-aUY1iRgollo-unsplash.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+
+}
 .header-img {
     display: flex;
     justify-content: center;
@@ -53,3 +69,4 @@
     height: 25px;
     width: 25px;
 }
+
