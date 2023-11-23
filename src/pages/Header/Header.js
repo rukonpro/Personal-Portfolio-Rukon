@@ -46,6 +46,7 @@ const Header = () => {
                     </div>
                 </div>
 
+
                 <div className=" md:col-span-6 col-span-12 flex justify-end">
                     <img className='w-auto  h-96 lg:h-2/6 ' src={ProfileLogo} alt="" data-aos="zoom-out-left" />
                 </div>
