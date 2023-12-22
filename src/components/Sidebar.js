@@ -12,15 +12,12 @@ import { useLocation } from 'react-router-dom';
 import Button from '@material-tailwind/react/Button';
 import Icon from '@material-tailwind/react/Icon';
 import "./Sidebar.css";
-import useDocumentTitle from './useDocumentTitle';
 
 export default function Sidebar() {
     const [showSidebar, setShowSidebar] = useState('-left-64');
     const hash = useLocation().hash;
     const pathname = useLocation().pathname;
 
-
-    useDocumentTitle(`Rukon.js${hash && "➔" + hash.toLocaleUpperCase().replace("#", "") || "➔" + pathname.toLocaleUpperCase().replace("/", "")}`)
 
     const menuData = [
         {
@@ -78,12 +75,12 @@ export default function Sidebar() {
                 />
             </div>
             <div
-                className={`sidebarContainer  fixed top-0 md:left-0 ${showSidebar}  flex-row flex-nowrap  shadow-xl  w-64 z-50 py-4 px-6 transition-all duration-300 `}
+                className={` bg-cyan-900  fixed top-0 md:left-0 ${showSidebar}  flex-row flex-nowrap  shadow-xl  w-64 z-50 py-4 px-3 transition-all duration-300 `}
             >
 
                 <div>
                     <div className='flex justify-between items-center'>
-                        <h1 className="mt-2 text-center text-green-400 text-xl font-bold font-mono"> Web Developer</h1>
+                        <h1 className="mt-2 text-center text-green-400 md:text-xl text-lg font-bold font-mono">Digital Marketer</h1>
                         <div
                             className={'md:hidden'}
                         >

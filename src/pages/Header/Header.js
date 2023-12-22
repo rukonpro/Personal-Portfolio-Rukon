@@ -2,7 +2,7 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import ProfileLogo from './img/Tosca White Gradient Company Profile Document A4 ().png'
+import ProfileLogo from '../../img/mehediPhoto.png'
 const Header = () => {
     AOS.init();
     return (
@@ -13,14 +13,14 @@ const Header = () => {
                     <div>
                         <div >
                             <h1 className=" text-6xl" data-aos="zoom-out-right ">Hi!</h1>
-                            <h1 className="text-4xl" data-aos="zoom-out-right ">Im Rukon  ,</h1>
+                            <h1 className="text-4xl" data-aos="zoom-out-right ">Im Mehedi Hasan ,</h1>
 
 
                             <h1 className=' text-2xl md:text-5xl  '>
                                 <Typewriter
 
                                     options={{
-                                        strings: ['React Developer', 'Responsive Web Designer', 'MERN Stack Developer'],
+                                        strings: ['Professional Digital Marketer', 'Freelancer'],
                                         autoStart: true,
                                         loop: true,
                                         cursor: '✍'
@@ -33,7 +33,7 @@ const Header = () => {
 
                         <div >
 
-                            <a href='https://drive.google.com/file/d/1S8dFRWC7f3QH6ZVnGp6miYLwPz8s4coh/view' alt='' target='blank'>
+                            <a href='https://drive.google.com/file/d/1l0q7TXQlGl5c9OrlPNzvqSdOiwcPMDMr/view' alt='resume' target='blank'>
 
                                 <button className="inline-flex items-center  text-white mt-4 px-4 py-2 text-sm font-medium  rounded-md shadow-sm select-none focus:outline-none focus:ring-2 focus:ring-offset-2 hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-150 group bg-gray-800 hover:bg-gray-900 focus:ring-gray-800">
                                     <svg className="w-6 h-6 text-white animate-bounce  group-hover:animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -48,7 +48,7 @@ const Header = () => {
 
 
                 <div className=" md:col-span-6 col-span-12 flex justify-end">
-                    <img className='w-auto  h-96 lg:h-2/6 ' src={ProfileLogo} alt="" data-aos="zoom-out-left" />
+                    <img className='w-auto rounded-full ' src={ProfileLogo} alt="" data-aos="zoom-out-left" />
                 </div>
             </div>
         </div>

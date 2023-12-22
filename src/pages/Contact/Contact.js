@@ -21,7 +21,7 @@ const Contact = () => {
     const sendEmail = (event) => {
         event.preventDefault();
 
-        emailjs.sendForm('service_zdrtp9b', 'template_n1ub0zc', form.current, 'user_sMNanZ38ggdHIXPN6PNqZ')
+        emailjs.sendForm('service_7k7w77f', 'template_bhfe1fh', form.current, 'xK7AaCy0QmsyOGSJA')
             .then((result) => {
                 console.log(result.text);
                 setOpen(true);
@@ -87,7 +87,7 @@ const Contact = () => {
                                 <div className="mt-2" data-aos="fade-right" data-aos-duration="2000">
                                     <span className="uppercase text-sm text-green-100 font-bold">SubJect</span>
                                     <input className="w-full bg-transparent  border border-spacing-2  text-gray-100 mt-2 py-1 px-2 rounded-lg focus:shadow-outline transform focus:translate-x-2 transition duration-300 focus:-skew-x-3"
-                                        type="text" placeholder='SubJect' name="message" required />
+                                        type="text" placeholder='SubJect' name="subject" required />
                                 </div>
                                 <div className="mt-2" data-aos="fade-left" data-aos-duration="2000">
                                     <span className="uppercase text-sm text-green-100 font-bold">Message</span>

@@ -7,13 +7,7 @@
     background-position:right 
 }
 
-.sidebarContainer{
-    background-image: linear-gradient(to top, rgba(255, 240, 240, 0), rgba(0, 0, 0, 0.212)), url("../Header/img/henrique-malaguti-aUY1iRgollo-unsplash.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-blend-mode: color-dodge;
-}
+
 .navigationContainer{
     background-image: linear-gradient(to right, rgba(75, 127, 151, 0.13), rgba(0, 0, 0, 0.322)), url("../Header/img/henrique-malaguti-aUY1iRgollo-unsplash.jpg");
     background-size: cover;
